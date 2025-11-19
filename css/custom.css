@@ -52,10 +52,8 @@ img{
         margin-right: 60px;
     }
 }
-@media (max-width: 650px    ) {
-    .jonasPic {
-    width: 35%;
-    }
+@media (max-width: 650px) {
+
     body{
         margin: 10px;
     }
