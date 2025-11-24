@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
+}
+
+
+.carousel{
+    width: 1000px;
+    overflow-x: auto;
+    display: flex;
+    gap: 100 px;
+}
+
+.carousel div{
+    flex: 0 0 1000px;
+}
