@@ -56,4 +56,21 @@ img{
 
 }
 
+@media (max-width: 800px) {
+  p{
+        margin-left: 40px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+  p{
+        margin-left: 20px;
+    }
+
+
+}
+
+
 
