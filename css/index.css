@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
+}
+
+
+.bio{
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:24px;
+    justify-content: space-around;
+    margin-bottom: 48px;
+}
+
+.bio .bioText{
+    min-width: 800px;
+}
+
+
+.bioText p, .bioText h2{
+    margin-top:0px;
+    margin-bottom: 0px;
+    padding:0px;
+}
+
+.bioText h2{
+    margin-left:40px;
+
+}
+
+.bioText p{
+    max-width: 600px;    
+}
+.jonasPic{
+    width: 500px;
+    height: auto;
+
+
+}
+
+.bioFlavor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bioFlavor div{
+    flex: 0 0 20%;
+}
+
