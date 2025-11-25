@@ -37,7 +37,7 @@ main{
     margin-right: 8%;
 }
 img{
-    border: solid 6px  #565d69;
+    border: solid 4px  #565d69;
     border-radius: 16px;
 }
 
@@ -55,5 +55,22 @@ img{
 
 
 }
+
+@media (max-width: 800px) {
+  p{
+        margin-left: 40px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+  p{
+        margin-left: 20px;
+    }
+
+
+}
+
 
 
