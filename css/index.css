@@ -27,10 +27,7 @@
     max-width: 600px;    
 }
 
-.picDiv {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .jonasPic{
     width: 500px;
@@ -61,10 +58,25 @@
 .bioFlavor .contact{
     flex: 0 0 300px;
 }
+
+@media (min-width: 2500px) {
+    .picDiv {
+        margin-left: 8%;
+    }
+}
+
+@media (max-width: 2500px) {
+
+    .picDiv {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media (max-width: 575px) {
    .jonasPic {
          width: 350px;
     }
+
 
 
 }
