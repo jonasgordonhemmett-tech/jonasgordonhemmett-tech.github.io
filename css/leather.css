@@ -5,12 +5,36 @@
 
 
 .carousel{
-    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1055px;
+    height:500px;
     overflow-x: auto;
+    scroll-snap-type: x mandatory;
     display: flex;
-    gap: 100 px;
+    gap: 10px;
+
 }
 
 .carousel div{
-    flex: 0 0 1000px;
+    scroll-snap-align: end;
+    margin:0 10px;
+    display: flex;
+
+}
+
+.carousel div p, .carousel div img{
+    margin:0 10px;
+
+    flex: 0 0 500px;
+    border: solid 6px  #565d69;
+    border-radius: 16px;
+    gap: 10px;
+
+    
+}
+
+
+.carousel div div{
+    padding: 10px;
 }

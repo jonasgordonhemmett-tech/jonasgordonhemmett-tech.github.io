@@ -26,10 +26,17 @@ header{
     padding-bottom: 12px;
 
     background-color: #565d69;
-    box-shadow: 0px 5px 5px darkgrey;
+    box-shadow: 0px 2px 5px darkgrey;
 
     position: sticky;
     top: 0;
+
+
+
+}
+
+header a{
+          text-decoration: none;
 
 }
 
