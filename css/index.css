@@ -10,7 +10,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap:24px;
-    gap:80px 80px;
+    gap:0px 80px;
     margin-bottom: 48px;
 
 }
@@ -20,7 +20,6 @@
 .bioText p, .bioText h2{
     margin-top:0px;
     margin-bottom: 0px;
-    padding:0px;
 }
 
 
@@ -43,7 +42,7 @@
 }
 
 .bioFlavor{
-    gap:80px 128px;
+    gap:0px 128px;
 }
 .bioFlavor .more{
     flex: 1 1 600px;

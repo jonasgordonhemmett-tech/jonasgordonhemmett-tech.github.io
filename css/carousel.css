@@ -46,3 +46,18 @@
 .carousel div div{
     padding: 10px;
 }
+
+@media (max-width: 585px) {
+    .carousel{
+    height:240px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+
+}
+   .half{
+    width: 260px;
+}
+
+
+}
