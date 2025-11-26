@@ -11,7 +11,7 @@
     margin-right: auto;
 }
 .carousel{
-    width: 1048px;
+    width: 1000px;
     height:480px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -22,13 +22,13 @@
 .half{
     width: 500px;
 }
-.carousel div{
-    scroll-snap-align: end;
+.carousel > div{
+    scroll-snap-align: start;
     margin:0 10px;
     display: flex;
 
 }
-.carousel div img, .carousel div p{
+.carousel > div img, .carousel div p{
     margin:0px 10px;
     border: solid 4px  #565d69;
     border-radius: 16px;
@@ -36,7 +36,7 @@
 }
 
 
-.carousel div p{
+.carousel > div p{
     flex: 0 0 480px;
     padding: 10px;
 
@@ -50,13 +50,32 @@
 @media (max-width: 585px) {
     .carousel{
     height:240px;
+    width: 260px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     display: flex;
 
-}
+    }
+    .carousel > div p{
+    flex: 0 0 212px;
+    width:240px;
+    padding: 10px;
+
+    }
+
+    .carousel > div{
+    scroll-snap-align: unset;
+   
+
+    }
+
+     .carousel > div > *{
+        scroll-snap-align: start;
+
+    }
    .half{
-    width: 260px;
+    width: 240px;
+
 }
 
 
