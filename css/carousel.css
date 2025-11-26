@@ -12,14 +12,16 @@
 }
 .carousel{
     width: 1048px;
-    height:500px;
+    height:480px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     display: flex;
-    gap: 10px;
 
 }
 
+.half{
+    width: 500px;
+}
 .carousel div{
     scroll-snap-align: end;
     margin:0 10px;
@@ -32,12 +34,7 @@
     border-radius: 16px;
     gap: 10px;
 }
-.carousel div img{
-    flex: 0 0 500px;
 
-
-    
-}
 
 .carousel div p{
     flex: 0 0 480px;

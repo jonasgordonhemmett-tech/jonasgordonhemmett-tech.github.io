@@ -12,6 +12,7 @@
     gap:24px;
     gap:80px 80px;
     margin-bottom: 48px;
+
 }
 
 
@@ -29,18 +30,11 @@
 
 
 
-.jonasPic{
-    width: 500px;
-    height: auto;
-
-
-}
-
 .bioFlavor{
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .jonasPic {
@@ -52,7 +46,8 @@
     gap:80px 128px;
 }
 .bioFlavor .more{
-    flex: 0 1 600px;
+    flex: 1 1 600px;
+    max-width: 700px;  
 }
 
 .bioFlavor .contact{
@@ -64,12 +59,27 @@
         margin-left: 8%;
     }
 }
+@media (min-width: 2000px) {
+    .bio {
+            margin-left: 18%;
+    }
+}
+
+
 
 @media (max-width: 2500px) {
 
     .picDiv {
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+
+@media (max-width: 1400px) {
+
+    .bioFlavor {
+        justify-content: flex-start;
     }
 }
 @media (max-width: 575px) {
