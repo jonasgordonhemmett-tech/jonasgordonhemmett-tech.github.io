@@ -10,6 +10,8 @@ p{
 
 }
 header{
+        z-index: 9999;
+
     font-family: 'Comfortaa';
 
     margin: 0px;

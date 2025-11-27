@@ -30,19 +30,39 @@
     </header>
     <main>
         <div class = "bio">
-            <!-- <div class="picDiv"><img src="resources/Me.jpg" alt="Jonas Hemmett" class = "jonasPic"></div> -->
-             <div class = "carousel half picDiv">
-                <div>
-                    <img src="resources/Me.jpg" alt="Portrait photo of me">
+            <div class="carouselWrapper">
 
+                <!-- <div class="picDiv"><img src="resources/Me.jpg" alt="Jonas Hemmett" class = "jonasPic"></div> -->
+                <button id="prevButton">◀</button>
+                <div class = "carousel half picDiv">
+                    <div>
+                        <img src="resources/Me.jpg" alt="Portrait photo of me">
+
+                    </div>
+                    <div>
+                        <img src="resources/MeRock.jpg" alt="Me rock climbing">
+                    </div>
+                    <div>
+                        <img src="resources/MeSki.jpg" alt="Me Skiing">
+                    </div>
                 </div>
-                <div>
-                    <img src="resources/MeRock.jpg" alt="Me rock climbing">
-                </div>
-                 <div>
-                    <img src="resources/MeSki.jpg" alt="Me Skiing">
-                </div>
+                <button id="nextButton">▶</button>
+
+
             </div>
+            <script>
+                const carousel = document.querySelector('.carousel');
+                const nextButton = document.querySelector('#nextButton');
+                const prevButton = document.querySelector('#prevButton');
+
+                nextButton.onclick = () => {
+                    carousel.scrollBy({ left: carousel.clientWidth, behavior: "smooth"});
+                };
+
+                prevButton.onclick = () => {
+                    carousel.scrollBy({ left: -carousel.clientWidth, behavior: "smooth"});
+                };
+            </script>
             <div class = "bioText">
                 <h2>Hi, I'm Jonas</h2>
                 <p>

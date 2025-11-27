@@ -6,21 +6,19 @@
 .carouselLabel{
     text-align: center;
 }
-.center{
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .carousel{
-    width: 974px;
-    height:495px;
+    width: 848px;
+    height:424px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     display: flex;
 
+
 }
 
 .half{
-    width: 500px;
+    width: 432px;
 }
 .carousel > div{
     scroll-snap-align: center;
@@ -38,55 +36,58 @@
 
 .carousel > div p{
     padding:10px;
-    width:  452px;
-    height:45S2px;
+    width:  380px;
+    height:380px;
 
 }   
 
 .carousel > div img{
-    width:  472px;
-    height:472px;
+    width:  400px;
+    height:400px;
     object-fit: cover;
 
 }   
 
 
 
-@media (max-width: 1100px) {
-    .carousel{
-        height:278px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        display: flex;
 
-    }
-    .carousel > div p{
-        flex: 0 0 212px;
-        width:240px;
 
-    }
 
-    .carousel > div img{
-    width:254px;
-    height:254px;
-    object-fit: cover;
-
-    } 
-
-    .carousel > div{
-    scroll-snap-align: unset;
-   
-
-    }
-
-     .carousel > div > *{
-        scroll-snap-align: center;
-
-    }
-   .half{
-    width: 264px;
+.carouselWrapper{
+    display: flex;
+    align-items: center;
+    gap:2px;
+        justify-content: center;
+}
+.carouselWrapper > button{
+    border: solid 4px  #565d69;
+    border-radius: 16px;
+    background: none;
+    font-size: 20px;
+    height:64px;
 
 }
 
+.carouselWrapper > button:hover{
+    transform: scale(1.03);
+}
+
+.carouselWrapper > button:active{
+    background-color: #bfcde6;
+}
+
+@media (max-width: 500px) {
+    .carouselWrapper > button{
+        font-size:15px
+        
+    }
+        .carouselWrapper > button{
+            height:48px;
+
+    }
+
+
+
 
 }
+

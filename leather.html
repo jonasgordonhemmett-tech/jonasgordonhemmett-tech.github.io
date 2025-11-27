@@ -25,26 +25,45 @@
         </div>
     </header>
         <h2 class = "carouselLabel">Orange Duffel Bag</h2>
-        <div class = "carousel center">
-            <div>
-                 <p>
-                    Card 1
-                 </p>
-                <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
+        <div class="carouselWrapper">
+            <button id="prevButton">◀</button>
 
+            <div class = "carousel">
+                <div>
+                    <p>
+                        Card 1
+                    </p>
+                    <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
+
+                </div>
+                <div>
+                    <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
+                    <p>
+                        Card 2
+                    </p>
+                </div>
+                <div>
+                    <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
+                    <p>
+                        Card 3
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
-                 <p>
-                    Card 2
-                 </p>
-            </div>
-            <div>
-                <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
-                 <p>
-                    Card 3
-                 </p>
-            </div>
+            <button id="nextButton">▶</button>
+
         </div>
+        <script>
+                const carousel = document.querySelector('.carousel');
+                const nextButton = document.querySelector('#nextButton');
+                const prevButton = document.querySelector('#prevButton');
+
+                nextButton.onclick = () => {
+                    carousel.scrollBy({ left: carousel.clientWidth, behavior: "smooth"});
+                };
+
+                prevButton.onclick = () => {
+                    carousel.scrollBy({ left: -carousel.clientWidth, behavior: "smooth"});
+                };
+        </script>
        
 </body>
