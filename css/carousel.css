@@ -73,7 +73,7 @@
     flex: 0 0 240px;
     object-fit: cover;
 
-} 
+    } 
 
     .carousel > div{
     scroll-snap-align: unset;
