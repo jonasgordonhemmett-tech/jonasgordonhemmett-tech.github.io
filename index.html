@@ -33,7 +33,7 @@
             <div class="carouselWrapper center">
 
                 <!-- <div class="picDiv"><img src="resources/Me.jpg" alt="Jonas Hemmett" class = "jonasPic"></div> -->
-                <button id="prevButton">◀</button>
+                <button id="prevButton" onclick="plusDivs(+1)">◀</button>
                 <div class = "carousel half picDiv">
                     <div>
                         <img src="resources/Me.jpg" alt="Portrait photo of me">
@@ -46,22 +46,29 @@
                         <img src="resources/MeSki.jpg" alt="Me Skiing">
                     </div>
                 </div>
-                <button id="nextButton">▶</button>
+                <button id="nextButton" onclick="plusDivs(+1)">▶</button>
 
 
             </div>
+            <!-- I used this to make the carousel work https://www.w3schools.com/w3css/w3css_slideshow.asp -->
             <script>
-                const carousel = document.querySelector('.carousel');
-                const nextButton = document.querySelector('#nextButton');
-                const prevButton = document.querySelector('#prevButton');
+                var slideIndex = 1;
+                showDivs(slideIndex);
 
-                nextButton.onclick = () => {
-                    carousel.scrollBy({ left: carousel.clientWidth, behavior: "smooth"});
-                };
+                function plusDivs(n) {
+                showDivs(slideIndex += n);
+                }
 
-                prevButton.onclick = () => {
-                    carousel.scrollBy({ left: -carousel.clientWidth, behavior: "smooth"});
-                };
+                function showDivs(n) {
+                var i;
+                var x = document.querySelectorAll(".carousel > div");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length} ;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex-1].style.display = "block";
+                }
             </script>
             <div class = "bioText">
                 <h2>Hi, I'm Jonas</h2>
