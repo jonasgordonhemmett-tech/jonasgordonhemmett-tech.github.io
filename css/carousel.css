@@ -22,7 +22,6 @@
 }
 .carousel > div{
     scroll-snap-align: center;
-    margin:0 10px;
     display: flex;
 
 }
@@ -30,7 +29,6 @@
     margin:0px 10px;
     border: solid 4px  #565d69;
     border-radius: 16px;
-    gap: 10px;
 }
 
 
@@ -86,7 +84,33 @@
 
     }
 
+    .carousel{
+        width: 224px;
+        height:224px;
+    }
 
+    .carousel > div p{
+    padding:10px;
+    width:  180px;
+    height:180px;
+    }   
+
+    .carousel > div img{
+        width:  200px;
+        height:200px;
+        object-fit: cover;
+
+    }  
+
+    .carousel > div{
+    scroll-snap-align: unset;
+
+    }
+
+    .carousel > div > * {
+    scroll-snap-align: center;
+
+    }
 
 
 }
