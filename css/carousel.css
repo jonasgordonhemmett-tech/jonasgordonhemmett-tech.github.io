@@ -55,35 +55,8 @@
 }
 
 @media (max-width: 1100px) {
-        .carousel{
-    height:376px;
-    width: 764px; 
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    display: flex;
-
-    }
-    .carousel > div p{
-    width:260px;
-    height:260px;
-    padding: 10px;
-
-    }
-
-    .carousel > div img{
-    width:260px;
-    height:260px;
-    object-fit: cover;
-
-    }  
-    
-    .half{
-        width: 376px;
-    }
-}
-@media (max-width: 585px) {
     .carousel{
-        height:264px;
+        height:278px;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         display: flex;
