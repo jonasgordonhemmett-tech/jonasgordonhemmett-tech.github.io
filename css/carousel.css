@@ -56,7 +56,7 @@
 @media (max-width: 585px) {
     .carousel{
     height:240px;
-    width: 260px;
+    width: 270px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     display: flex;
@@ -86,7 +86,8 @@
 
     }
    .half{
-    width: 240px;
+    height:263.2px;
+    width: 264px;
 
 }
 
