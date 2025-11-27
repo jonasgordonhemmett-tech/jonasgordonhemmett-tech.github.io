@@ -58,7 +58,7 @@ header h1{
 }
 
 header h1:hover{
-    transform: scale(1.025);
+    transform: scale(1.01);
 
 }
 
@@ -70,7 +70,7 @@ header div a{
 }
 
 header div a:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
 
 }
 
