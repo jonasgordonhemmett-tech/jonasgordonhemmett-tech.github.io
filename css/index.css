@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-        justify-content: center;
+    justify-content: center;
     gap:24px;
     gap:0px 80px;
     margin-bottom: 48px;
@@ -81,6 +81,9 @@
 @media (max-width: 1600px) {
 
     .bioFlavor {
+        justify-content: flex-start;
+    }
+    .bio {
         justify-content: flex-start;
     }
 }
