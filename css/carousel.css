@@ -40,7 +40,13 @@
     flex: 0 0 480px;
     padding: 10px;
 
-}
+}   
+
+.carousel > div img{
+    flex: 0 0 480px;
+    object-fit: cover;
+
+}   
 
 
 .carousel div div{
@@ -62,6 +68,12 @@
     padding: 10px;
 
     }
+
+    .carousel > div img{
+    flex: 0 0 240px;
+    object-fit: cover;
+
+} 
 
     .carousel > div{
     scroll-snap-align: unset;
