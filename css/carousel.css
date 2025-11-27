@@ -12,7 +12,7 @@
 }
 .carousel{
     width: 1064px;
-    height:480px;
+    height:495px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     display: flex;
@@ -43,7 +43,8 @@
 }   
 
 .carousel > div img{
-    flex: 0 0 480px;
+    width:  472px;
+    height:472px;
     object-fit: cover;
 
 }   
@@ -55,25 +56,30 @@
 
 @media (max-width: 1100px) {
         .carousel{
-    height:360px;
-    width: 764px;
+    height:376px;
+    /* width: 764px; FIX */
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     display: flex;
 
     }
     .carousel > div p{
-    flex: 0 0 312px;
-    width:360px;
+    width:700px;
+    height:352px;
     padding: 10px;
 
     }
 
     .carousel > div img{
-    flex: 0 0 360px;
+    width:352px;
+    height:352px;
     object-fit: cover;
 
-    }   
+    }  
+    
+    .half{
+        width: 376px;
+    }
 }
 @media (max-width: 585px) {
     .carousel{
@@ -108,7 +114,6 @@
 
     }
    .half{
-    height:263.2px;
     width: 264px;
 
 }
