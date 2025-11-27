@@ -11,7 +11,7 @@
     margin-right: auto;
 }
 .carousel{
-    width: 1000px;
+    width: 1064px;
     height:480px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -23,7 +23,7 @@
     width: 500px;
 }
 .carousel > div{
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     margin:0 10px;
     display: flex;
 
@@ -53,6 +53,28 @@
     padding: 10px;
 }
 
+@media (max-width: 1100px) {
+        .carousel{
+    height:360px;
+    width: 764px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+
+    }
+    .carousel > div p{
+    flex: 0 0 312px;
+    width:360px;
+    padding: 10px;
+
+    }
+
+    .carousel > div img{
+    flex: 0 0 360px;
+    object-fit: cover;
+
+    }   
+}
 @media (max-width: 585px) {
     .carousel{
     height:240px;
@@ -82,7 +104,7 @@
     }
 
      .carousel > div > *{
-        scroll-snap-align: start;
+        scroll-snap-align: center;
 
     }
    .half{
