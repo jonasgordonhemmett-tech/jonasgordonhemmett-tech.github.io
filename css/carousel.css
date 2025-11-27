@@ -136,9 +136,7 @@
         width: 224px;
     }
 
-    .half{
-        width:100px;
-    }
+
     .carousel > div{
     scroll-snap-align: unset;
 
