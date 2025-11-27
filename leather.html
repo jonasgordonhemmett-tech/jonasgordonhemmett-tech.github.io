@@ -52,14 +52,14 @@
             <button id="nextButton" onclick="plusDivs(-1)">▶</button>
 
         </div>
-        
+
         <!-- I used this to make the carousel work https://www.w3schools.com/w3css/w3css_slideshow.asp -->
         <script>
             var slideIndex = 1;
             showDivs(slideIndex);
 
             function plusDivs(n) {
-            showDivs(slideIndex += n);
+                showDivs(slideIndex += n);
             }
 
             function showDivs(n) {
@@ -70,7 +70,7 @@
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
-            x[slideIndex-1].style.display = "block";
+            x[slideIndex-1].style.display = "flex";
             }
         </script>
        

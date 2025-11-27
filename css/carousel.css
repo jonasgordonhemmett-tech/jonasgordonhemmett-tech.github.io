@@ -10,10 +10,7 @@
 .carousel{
     width: 848px;
     height:424px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     display: flex;
-    scrollbar-width: none;
 
 }
 
@@ -21,7 +18,6 @@
     width: 432px;
 }
 .carousel > div{
-    scroll-snap-align: center;
     display: flex;
 
 }
