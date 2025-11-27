@@ -64,15 +64,15 @@
 
     }
     .carousel > div p{
-    width:332px;
-    height:332px;
+    width:260px;
+    height:260px;
     padding: 10px;
 
     }
 
     .carousel > div img{
-    width:352px;
-    height:352px;
+    width:260px;
+    height:260px;
     object-fit: cover;
 
     }  
@@ -83,22 +83,22 @@
 }
 @media (max-width: 585px) {
     .carousel{
-    height:240px;
-    width: 270px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    display: flex;
+        height:264px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        display: flex;
 
     }
     .carousel > div p{
-    flex: 0 0 212px;
-    width:240px;
-    padding: 10px;
+        flex: 0 0 212px;
+        width:240px;
+        padding: 10px;
 
     }
 
     .carousel > div img{
-    flex: 0 0 240px;
+    width:254px;
+    height:254px;
     object-fit: cover;
 
     } 
