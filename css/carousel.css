@@ -67,11 +67,11 @@
 }
 
 .carouselWrapper > button:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .carouselWrapper > button:active{
-    background-color: #bfcde6;
+    background-color: #d2dbea;
 }
 
 @media (max-width: 1000px) {
@@ -92,7 +92,7 @@
         height:300px;
     } 
 }
-@media (max-width: 650px) {
+@media (max-width: 725px) {
     .carouselWrapper > button{
         font-size:15px
         
