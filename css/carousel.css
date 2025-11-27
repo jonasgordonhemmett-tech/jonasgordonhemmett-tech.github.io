@@ -11,7 +11,7 @@
     margin-right: auto;
 }
 .carousel{
-    width: 1064px;
+    width: 974px;
     height:495px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
