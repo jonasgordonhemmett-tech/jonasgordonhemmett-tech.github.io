@@ -18,7 +18,7 @@ h1, .ah1{
 }
 
 
-h2{
+h2, h3{
     font-family: 'Comfortaa';
     font-size: 32px;
     font-weight: normal;    
@@ -69,7 +69,7 @@ img{
 }
 
 @media (max-width: 500px) {
-    h2{
+    h2, h3{
                 font-size:24px;
 
     }
