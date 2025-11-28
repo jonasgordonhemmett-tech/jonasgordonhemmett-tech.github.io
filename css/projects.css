@@ -15,20 +15,22 @@ main{
 }
 
 .carouselText p{
-    flex:1 0 600px;
-    max-width: 630px;
-    margin-right:20px;
+    flex:1 1 600px;
+    max-width: 600px;
+    margin-right:12px;
 }
-@media (max-width: 1317px) {
+@media (max-width: 13000px) {
         .carouselText > div{
             margin-left: auto;
             margin-right: auto;
         }
 
 }
-@media (min-width: 1317px) {
+@media (max-width: 1300px) {
     .carouselText p{
-        max-width: auto;
+        max-width: fit-content;
+        margin-right: 0px;
+
 
     }
 }

@@ -41,7 +41,7 @@
                         <br>
                         <a href="https://jhemmett.w3.uvm.edu/Blackjack_Bot/">Blackjack Bot Website</a>
                     </p>
-                    <div>
+                    <div class="carousel1">
                         <div class="carouselWrapper">
                             <!-- <div class="picDiv"><img src="resources/Me.jpg" alt="Jonas Hemmett" class = "jonasPic"></div> -->
                             <button id="prevButton" onclick="plusDivs(+1)">◀</button>
@@ -72,7 +72,7 @@
 
                             function showDivs(n) {
                             var i;
-                            var x = document.querySelectorAll(".carousel > div");
+                            var x = document.querySelectorAll(".carousel1 .carousel > div");
                             if (n > x.length) {slideIndex = 1}
                             if (n < 1) {slideIndex = x.length} ;
                             for (i = 0; i < x.length; i++) {
@@ -87,16 +87,87 @@
             </div>
             <div>
                 <h2>Point of Sale System</h2>
-                <p>
-                    This project simulates a store's POS system. I created it in order to play around with memory managment. Its biggest feature is being to dynamically read and write objects from memory to JSON save files.<br>
-                    <br>
-                    <a href="https://github.com/jonasgordonhemmett-tech/Point_of_Sale_System">GitHub Repository</a>
-                </p>
-            </div>
+                <div class="carouselText">
+                    <p>
+                        This project simulates a store's POS system. I created it in order to play around with memory managment. Its biggest feature is being able to dynamically read and write objects from memory to .JSON save files.<br>
+                        <br>
+                        <a href="https://github.com/jonasgordonhemmett-tech/Point_of_Sale_System">GitHub Repository</a>
+                    </p>
+                    <div class="carousel2">
+                        <div class="carouselWrapper">
+                            <!-- <div class="picDiv"><img src="resources/Me.jpg" alt="Jonas Hemmett" class = "jonasPic"></div> -->
+                            <button id="prevButton2" onclick="plusDivs2(+1)">◀</button>
+                            <div class = "carousel half picDiv">
+                                <div>
+                                    <img src="resources/POSSlides/1.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/2.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/3.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/4.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/5.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/6.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/7.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/8.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/9.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/10.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/11.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/12.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/POSSlides/13.jpg" alt="Blackjack Bot">
+                                </div>
+                                
+                            </div>
+                            <button id="nextButton2" onclick="plusDivs2(+1)">▶</button>
+                        </div>
+                            <!-- I used this to make the carousel work https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                        <script>
+                            var slideIndex2 = 1;
+                            showDivs2(slideIndex2);
+
+                            function plusDivs2(n2) {
+                                showDivs2(slideIndex2 += n2);
+                            }
+
+                            function showDivs2(n2) {
+                                var i2;
+                                var x2 = document.querySelectorAll(".carousel2  .carousel > div");
+                                if (n2 > x2.length) {slideIndex2 = 1}
+                                if (n2 < 1) {slideIndex2 = x2.length} ;
+                                for (i2 = 0; i2 < x2.length; i2++) {
+                                    x2[i2].style.display = "none";
+                                }
+                                x2[slideIndex2-1].style.display = "flex";
+                            }
+                        </script>
+                    </div>
+                </div>
+                </div>
             <div>
                 <h2>Ork Name Tester</h2>
                 <p>
-                    This program lets you test Ork names. It lets you upload and test C++ files.<br>
+                    This program lets you test Ork names. You  upload a C++ file the site, the site runs it, and it the test results are printed to the web page.<br>
                     <br>
                     <a href="https://jhemmett.w3.uvm.edu/cs2300/M3GP/test_cases.html">Website</a>
 
