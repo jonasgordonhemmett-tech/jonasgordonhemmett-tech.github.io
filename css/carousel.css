@@ -135,6 +135,8 @@
 
     .carousel > div{
     scroll-snap-align: unset;
+    flex-wrap: wrap;
+    gap: 8px;
 
     }
 
