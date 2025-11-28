@@ -3,6 +3,9 @@
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
 }
 
+.center{
+    justify-content: center;
+}
 .carouselLabel{
     text-align: center;
 }
@@ -51,7 +54,6 @@
 .carouselWrapper{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .carouselWrapper > button{
     border: solid 4px  #565d69;

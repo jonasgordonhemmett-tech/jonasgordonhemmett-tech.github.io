@@ -30,32 +30,77 @@
             <div>
                 <h2>Projects</h2>
                 <p>
-                    Here are some of the many projects I've worked on. Many of these projects are work in progress, so check back here for updates.
+                    Here are some of the many projects I've worked on. I built this website myself using HTML, CSS, and some basic JavaScript. Many of the projects on here are work in progress, so check back here for updates.
                 </p>
             </div>
-             <div>
-                <h2>My Website</h2>
-                <p>
-                    ...
-                </p>
-            </div>
+
             <div>
                 <h2>Blackjack Bot</h2>
-                <p>
-                    <a href="https://jhemmett.w3.uvm.edu/Blackjack_Bot/">Blackjack Bot Website</a>
-                    <br><br>...
-                </p>
+                <div class = "carouselText">
+                    <div>
+                        <div class="carouselWrapper">
+                            <!-- <div class="picDiv"><img src="resources/Me.jpg" alt="Jonas Hemmett" class = "jonasPic"></div> -->
+                            <button id="prevButton" onclick="plusDivs(+1)">◀</button>
+                            <div class = "carousel half picDiv">
+                                <div>
+                                    <img src="resources/Bot.jpg" alt="Blackjack Bot">
+                                </div>
+                                <div>
+                                    <img src="resources/BotLayout.jpg" alt="Blackjack Bot laser-cut layout">
+
+                                </div>
+                                <div>
+                                    <img src="resources/BotUI.png" alt="Blackjack Bot UI">
+
+                                </div>
+                                
+                            </div>
+                            <button id="nextButton" onclick="plusDivs(+1)">▶</button>
+                        </div>
+                            <!-- I used this to make the carousel work https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n) {
+                            showDivs(slideIndex += n);
+                            }
+
+                            function showDivs(n) {
+                            var i;
+                            var x = document.querySelectorAll(".carousel > div");
+                            if (n > x.length) {slideIndex = 1}
+                            if (n < 1) {slideIndex = x.length} ;
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            x[slideIndex-1].style.display = "flex";
+                            }
+                        </script>
+                    </div>
+                    <p>
+                        I wanted to combine my interest in card games with computer science to create a more efficient playstyle so I built a Raspberry Pi based bot that can participate in real world games of blackjack. I started this project in CS 2210: Computer Organization and I've continued to expand it independently using concepts from CS 3240: Algorithm Design & Analysis and CS 2510: Intro Artificial Intelligence. I'm interested in the practical applications of AI and this was a good opportunity to put this intrest to use.<br>
+                        <br>
+                        <a href="https://jhemmett.w3.uvm.edu/Blackjack_Bot/">Blackjack Bot Website</a>
+                    </p>
+                </div>
+                </div>
             </div>
             <div>
                 <h2>Point of Sale System</h2>
                 <p>
-                    ...
+                    This project simulates a store's POS system. I created it in order to play around with memory managment. Its biggest feature is being to dynamically read and write objects from memory to JSON save files.<br>
+                    <br>
+                    <a href="https://github.com/jonasgordonhemmett-tech/Point_of_Sale_System">GitHub Repository</a>
                 </p>
             </div>
             <div>
                 <h2>Ork Name Tester</h2>
                 <p>
-                    ...
+                    This program lets you test Ork names. It lets you upload and test C++ files.<br>
+                    <br>
+                    <a href="https://jhemmett.w3.uvm.edu/cs2300/M3GP/test_cases.html">Website</a>
+
                 </p>
             </div>
             
