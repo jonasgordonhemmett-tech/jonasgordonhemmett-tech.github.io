@@ -12,12 +12,12 @@ main{
 .carouselText{
     display: flex;
     flex-wrap:wrap;
-    align-items: center;
 }
 
 .carouselText p{
     flex:1 0 600px;
-    max-width: 700px;
+    max-width: 630px;
+    margin-right:20px;
 }
 @media (max-width: 1317px) {
         .carouselText > div{
@@ -28,7 +28,6 @@ main{
 }
 @media (min-width: 1317px) {
     .carouselText p{
-        margin-left: 20px;
         max-width: auto;
 
     }

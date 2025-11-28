@@ -20,6 +20,8 @@
 .half{
     width: 432px;
 }
+
+
 .carousel > div{
     display: flex;
      align-items: center; 
