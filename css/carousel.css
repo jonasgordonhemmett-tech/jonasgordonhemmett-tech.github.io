@@ -19,6 +19,7 @@
 }
 .carousel > div{
     display: flex;
+     align-items: center; 
 
 }
 .carousel > div img, .carousel div p{
@@ -69,10 +70,7 @@
     background-color: #d2dbea;
 }
 
-/* This is a janky workaround, but it works */
-#nextButton{
-        margin-left: 8px;
-}
+
 @media (max-width: 1000px) {
     .carousel{
     width: 658px;
@@ -90,12 +88,7 @@
         width:  300px;
         height:300px;
     } 
-    /* This is a janky workaround, but it works */
 
-/* This is a janky workaround, but it works */
-    #nextButton{
-        margin-left: -2px;
-    }
 }
 @media (max-width: 725px) {
     .carouselWrapper > button{
