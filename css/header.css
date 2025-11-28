@@ -65,11 +65,13 @@ header h1:hover{
 }
 
 
-header div a{
+header > div > a{
     font-size:32px;
     color: #212121;
 
 }
+
+
 
 header div a:hover{
     transform: scale(1.03);
