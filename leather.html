@@ -24,34 +24,33 @@
         </div>
     </header>
         <h2 class = "carouselLabel">Orange Duffel Bag</h2>
-        <div class="carouselWrapper">
-            <button id="prevButton" onclick="plusDivs(+1)">◀</button>
+        <div class = "centerDiv">
+            <div class="carouselWrapper">
+                <button id="prevButton" onclick="plusDivs(+1)">◀</button>
+                <div class = "carousel">
+                    <div>
+                        <p>
+                            Card 1
+                        </p>
+                        <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
 
-            <div class = "carousel center">
-                <div>
-                    <p>
-                        Card 1
-                    </p>
-                    <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
-
+                    </div>
+                    <div>
+                        <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
+                        <p>
+                            Card 2
+                        </p>
+                    </div>
+                    <div>
+                        <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
+                        <p>
+                            Card 3
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
-                    <p>
-                        Card 2
-                    </p>
-                </div>
-                <div>
-                    <img src="resources/OrangeBag.jpg" alt="Orange Leather Bag">
-                    <p>
-                        Card 3
-                    </p>
-                </div>
+                <button id="nextButton" onclick="plusDivs(-1)">▶</button>
             </div>
-            <button id="nextButton" onclick="plusDivs(-1)">▶</button>
-
         </div>
-
         <!-- I used this to make the carousel work https://www.w3schools.com/w3css/w3css_slideshow.asp -->
         <script>
             var slideIndex = 1;
