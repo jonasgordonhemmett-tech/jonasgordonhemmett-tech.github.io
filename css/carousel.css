@@ -11,14 +11,14 @@
 }
 
 .carousel{
-    width: 848px;
+    width: 856px;
     height:424px;
     display: flex;
 
 }
 
 .half{
-    width: 432px;
+    width: 428px;
 }
 
 
@@ -47,8 +47,6 @@
     object-fit: cover;
 
 }   
-
-
 
 
 
@@ -82,7 +80,7 @@
     }
         
     .half{
-        width: 318px;
+        width: 328px;
     }
     .carousel > div p{
         width:  280px;
