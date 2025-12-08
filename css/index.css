@@ -56,6 +56,10 @@
     flex: 0 0 300px;
 }
 
+.carouselWrapper{
+    margin-left: auto;
+    margin-right: auto;
+}
 @media (min-width: 2500px) {
     .picDiv {
         margin-left: 8%;

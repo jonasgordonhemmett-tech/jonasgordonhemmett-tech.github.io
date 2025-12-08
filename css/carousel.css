@@ -11,14 +11,14 @@
 }
 
 .carousel{
-    width: 848px;
+    width: 856px;
     height:424px;
     display: flex;
 
 }
 
 .half{
-    width: 432px;
+    width: 428px;
 }
 
 
@@ -47,8 +47,6 @@
     object-fit: cover;
 
 }   
-
-
 
 
 
@@ -82,7 +80,7 @@
     }
         
     .half{
-        width: 318px;
+        width: 328px;
     }
     .carousel > div p{
         width:  280px;
@@ -136,8 +134,15 @@
 @media (max-width: 500px) {
     .carousel{
         width: 224px;
+        height: 426px;
+        margin-bottom: 10px;
     }
 
+    .half{
+        height: 224px;
+        margin-bottom: 12px;
+
+    }
 
     .carousel > div{
     scroll-snap-align: unset;
