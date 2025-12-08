@@ -56,12 +56,9 @@
     flex: 0 0 300px;
 }
 
-.carouselWrapper{
-    margin-left: auto;
-    margin-right: auto;
-}
+
 @media (min-width: 2500px) {
-    .picDiv {
+    .carouselWrapper {
         margin-left: 8%;
     }
 }
@@ -85,6 +82,12 @@
     }
     .bio {
         justify-content: flex-start;
+    }
+}
+@media (max-width: 1502px) {
+
+    .carouselWrapper{
+        margin: 0 auto;
     }
 }
 @media (max-width: 575px) {

@@ -92,7 +92,7 @@
     } 
 
 }
-@media (max-width: 725px) {
+@media (max-width: 512px) {
     .carouselWrapper > button{
         font-size:15px
         

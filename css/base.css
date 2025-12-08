@@ -9,13 +9,6 @@ html{
 body{
     margin: 0px;
 }
-h1, .ah1{
-    color: #020718;
-    text-decoration: none;
-    margin: 0px;
-    font-size:48px;
-
-}
 
 
 h2, h3{
@@ -52,13 +45,7 @@ img{
 }
 
 
-@media (max-width: 1053px) {
-    h1, .ah1{
-        font-size:32px;
-    }
 
-
-}
 
 @media (max-width: 800px) {
   p{

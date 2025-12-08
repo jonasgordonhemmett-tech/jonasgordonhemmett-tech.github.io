@@ -2,6 +2,12 @@
     font-family: 'Comfortaa';
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
 }
+h1, .ah1{
+    text-decoration: none;
+    margin: 0px;
+    font-size:48px;
+
+}
 
 p{
         margin-top:0px;
@@ -65,9 +71,9 @@ header h1:hover{
 }
 
 
-header > div > a{
+header a{
     font-size:32px;
-    color: #212121;
+    color: #c8cfe9;
 
 }
 
@@ -78,15 +84,33 @@ header div a:hover{
 
 }
 
+
 @media (max-width: 1350px) {    
     header{
         justify-content: center;
     }
 }
 
+
 @media (max-width: 630px) {
     header div a{
-        font-size:20px;
+        font-size:24px;
+    }
+
+    h1, .ah1{
+        font-size: 36px;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    header div a{
+        font-size:24;
+    }
+
+    h1, .ah1{
+        font-size: 36px;
     }
 
 
