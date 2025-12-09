@@ -27,23 +27,141 @@
 <body>
     <main>
         <section id="main">
-            <div class="carousel1">
+            <div class="carousel3">
+                <h2 class = "carouselLabel">Tooled Valet Tray</h2>
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs3(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel">
+                             <div>
+                                <p>
+                                    This is a custom watch band I created for a Timex moonphase watch I thrifted.
+                                </p>
+                                <img                               
+                                    src="resources/leather/WatchBand/WatchFace-800.jpg"
+
+                                    srcset = "
+                                        resources/leather/WatchBand/WatchFace-400.jpg 400w,
+                                        resources/leather/WatchBand/WatchFace-800.jpg 800w,
+                                        resources/leather/WatchBand/WatchFace-1263.jpg.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Leather Valet Tray with tooled pattern">
+                            </div>
+                            <div>
+                                <div>
+                                    <p>
+                                        The first part of the project was to take measurements of the watch and its existing band. I used a measuering tape and calipers.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        My Measurements:<br>
+                                        <br>
+                                        Wrist Diameter:&nbsp170mm<br>
+                                        Lug Width:&nbsp12mm<br>
+                                        Buckle Width:&nbsp10mm<br>
+                                        Lug to Lug:&nbsp36mm<br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <p>
+                                        The next step was to turn these measurements into a pattern. I used onshape to draft it as it is easy to share. I parameterized the varibles so you can easily make your own <a href = "https://cad.onshape.com/documents/c024e1b63bee0b6e56546609/w/b2a2b49c46092d9341bb982d/e/2f52a294d0928827d5149f7f?renderMode=0&leftPanel=false&uiState=69387b0ac5b6408dbf1e9adc">here</a>.
+                                    </p>
+                                </div>
+                                <div>
+                                    <img                               
+                                    src="resources/leather/WatchBand/Step0-800.png"
+
+                                    srcset = "
+                                        resources/leather/WatchBand/Step0-400.png 400w,
+                                        resources/leather/WatchBand/Step0-800.png 800w,
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        300px
+                                    "
+                                    alt="Onshape drafting">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <p>
+                                        Next picked my leather (3oz veg tan), printed the CAD drawings onto paper, and taped the pattern pieces onto the leather.
+                                    </p>
+                                </div>
+                                <div>
+                                    <img                               
+                                    src="resources/leather/WatchBand/Step1-800.jpg"
+
+                                    srcset = "
+                                        resources/leather/WatchBand/Step1-400.jpg 400w,
+                                        resources/leather/WatchBand/Step1-800.jpg 800w,
+                                        resources/leather/WatchBand/Step0-1600.jpg 1600w,
+
+                                    " 
+
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Onshape drafting">
+                                </div>
+                            </div>
+                        </div>
+                        <button id="nextButton" onclick="plusDivs3(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex3 = 1;
+                    showDivs3(slideIndex3);
+
+                    function plusDivs3(n) {
+                        showDivs3(slideIndex3 += n);
+                    }
+
+                    function showDivs3(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel3 .carousel > div");
+                        if (n > x.length) {slideIndex3 = 1}
+                        if (n < 1) {slideIndex3 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex3-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
+        <section>
+            <div class="carousel2">
                 <h2 class = "carouselLabel">Orange Duffel Bag</h2>
                 <div class = "centerDiv">
                     <div class="carouselWrapper">
-                        <button id="prevButton" onclick="plusDivs(-1)" aria-label="Previous slide">◀</button>
+                        <button id="prevButton" onclick="plusDivs2(-1)" aria-label="Previous slide">◀</button>
                         <div class = "carousel">
                             <div>
                                 <p>
                                     This is an orange bag I made for my mom. It features shoulder straps and a drawstring closure.
                                 </p>
                             <img 
-                                    src="resources/leather/OrangeBag-800.jpg"
+                                    src="resources/leather/OrangeBag/OrangeBag-800.jpg"
 
                                     srcset = "
-                                        resources/leather/OrangeBag-400.jpg 400w,
-                                        resources/leather/OrangeBag-800.jpg 800w,
-                                        resources/leather/OrangeBag-1600.jpg 1600w
+                                        resources/leather/OrangeBag/OrangeBag-400.jpg 400w,
+                                        resources/leather/OrangeBag/OrangeBag-800.jpg 800w,
+                                        resources/leather/OrangeBag/OrangeBag-1600.jpg 1600w
                                     " 
                                     sizes = "
                                         (max-width: 500px) 224px,
@@ -58,11 +176,11 @@
                                     The pattern is  from <a href="https://www.etsy.com/listing/946408332/leather-duffel-bag-pattern-pdf-download">TonySeePatterns</a> on Etsy and made some minor modifications like removing the handle.
                                 </p>
                                 <img      
-                                    src="resources/leather/Etsy-800.png"
+                                    src="resources/leather/OrangeBag/Etsy-800.png"
 
                                     srcset = "
-                                        resources/leather/Etsy-400.png 400w,
-                                        resources/leather/Etsy-800.png 800w,
+                                        resources/leather/OrangeBag/Etsy-400.png 400w,
+                                        resources/leather/OrangeBag/Etsy-800.png 800w,
                                     " 
                                     sizes = "
                                         (max-width: 500px) 224px,
@@ -76,11 +194,11 @@
                                     My favorite part is the orange Clemence leather. I got it for great deal as the piece I purchased came with some natural imperfections.
                                 </p>
                                 <img                               
-                                    src="resources/leather/OrangeLeather-800.jpg"
+                                    src="resources/leather/OrangeBag/OrangeLeather-800.jpg"
 
                                     srcset = "
-                                        resources/leather/OrangeLeather-400.jpg 400w,
-                                        resources/leather/OrangeLeather-800.jpg 800w,
+                                        resources/leather/OrangeBag/OrangeLeather-400.jpg 400w,
+                                        resources/leather/OrangeBag/OrangeLeather-800.jpg 800w,
                                     " 
                                     sizes = "
                                         (max-width: 500px) 224px,
@@ -94,12 +212,12 @@
                                     I did all the work by hand. it took a while, but I think my hardwork payed off.
                                 </p>
                                 <img                               
-                                    src="resources/leather/OrangeBagFlat-800.jpg"
+                                    src="resources/leather/OrangeBag/OrangeBagFlat-800.jpg"
 
                                     srcset = "
-                                        resources/leather/OrangeBagFlat-400.jpg 400w,
-                                        resources/leather/OrangeBagFlat-800.jpg 800w,
-                                        resources/leather/OrangeBagFlat-1600.jpg 1600w
+                                        resources/leather/OrangeBag/OrangeBagFlat-400.jpg 400w,
+                                        resources/leather/OrangeBag/OrangeBagFlat-800.jpg 800w,
+                                        resources/leather/OrangeBag/OrangeBagFlat-1600.jpg 1600w
                                     " 
                                     sizes = "
                                         (max-width: 500px) 224px,
@@ -114,12 +232,12 @@
                                     Bernie thinks so too.
                                 </p>
                                 <img                               
-                                    src="resources/leather/OrangeBagCat-800.jpg"
+                                    src="resources/leather/OrangeBag/OrangeBagCat-800.jpg"
 
                                     srcset = "
-                                        resources/leather/OrangeBagCat-400.jpg 400w,
-                                        resources/leather/OrangeBagCat-800.jpg 800w,
-                                        resources/leather/OrangeBagCat-1600.jpg 1600w
+                                        resources/leather/OrangeBag/OrangeBagCat-400.jpg 400w,
+                                        resources/leather/OrangeBag/OrangeBagCat-800.jpg 800w,
+                                        resources/leather/OrangeBag/OrangeBagCat-1600OrangeBagCat-1600.jpg 1600w
                                     " 
                                     sizes = "
                                         (max-width: 500px) 224px,
@@ -130,60 +248,6 @@
                                     alt="Orange leather bag layed flat">
                             </div>
                         </div>
-                        <button id="nextButton" onclick="plusDivs(+1)" aria-label="Next slide">▶</button>
-                    </div>
-                </div>
-                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
-                <script>
-                    var slideIndex = 1;
-                    showDivs(slideIndex);
-
-                    function plusDivs(n) {
-                        showDivs(slideIndex += n);
-                    }
-
-                    function showDivs(n) {
-                    var i;
-                    var x = document.querySelectorAll(".carousel1  .carousel > div");
-                    if (n > x.length) {slideIndex = 1}
-                    if (n < 1) {slideIndex = x.length} ;
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    x[slideIndex-1].style.display = "flex";
-                    }
-                </script>
-            </div>
-        </section>
-            <div class="carousel2">
-                <h2 class = "carouselLabel">Orange Duffel Bag</h2>
-                <div class = "centerDiv">
-                    <div class="carouselWrapper">
-                        <button id="prevButton" onclick="plusDivs2(-1)" aria-label="Previous slide">◀</button>
-                        <div class = "carousel">
-                            <div>
-                                <p>
-                                    This is an orange bag I made for my mom. It features shoulder straps and a drawstring closure.
-                                </p>
-                            <img 
-                                    src="resources/leather/OrangeBag-800.jpg"
-
-                                    srcset = "
-                                        resources/leather/OrangeBag-400.jpg 400w,
-                                        resources/leather/OrangeBag-800.jpg 800w,
-                                        resources/leather/OrangeBag-1600.jpg 1600w
-                                    " 
-                                    sizes = "
-                                        (max-width: 500px) 224px,
-                                        (max-width: 790px) 200px,
-                                        (max-width: 1400px) 300px,
-                                    400px
-                                    "
-                                    alt="Orange leather bag in grass">
-                            </div>
-
-
-                        </div>
                         <button id="nextButton" onclick="plusDivs2(+1)" aria-label="Next slide">▶</button>
                     </div>
                 </div>
@@ -192,19 +256,80 @@
                     var slideIndex2 = 1;
                     showDivs2(slideIndex2);
 
-                    function plusDivs2(n2) {
-                        showDivs2(slideIndex2 += n2);
+                    function plusDivs2(n) {
+                        showDivs2(slideIndex2 += n);
                     }
 
-                    function showDivs2(n2) {
-                        var i2;
-                        var x2 = document.querySelectorAll(".carousel2  .carousel > div");
-                        if (n2 > x2.length) {slideIndex2 = 1}
-                        if (n2 < 1) {slideIndex2 = x2.length} ;
-                        for (i2 = 0; i2 < x2.length; i2++) {
-                            x2[i2].style.display = "none";
+                    function showDivs2(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel2  .carousel > div");
+                        if (n > x.length) {slideIndex2 = 1}
+                        if (n < 1) {slideIndex2 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
                         }
-                        x2[slideIndex2-1].style.display = "flex";
+                        x[slideIndex2-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
+        <section>
+            <div class="carousel1">
+                <h2 class = "carouselLabel">Tooled Valet Tray</h2>
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs1(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel">
+                             <div>
+                                <p>
+                                    I made this valet tray for my dad. It features brass rivets and a hand-tooled pattern giving the appearance of a weave.
+                                </p>
+                                <img                               
+                                    src="resources/leather/ValetTray/ValetTray-800.jpg"
+
+                                    srcset = "
+                                        resources/leather/ValetTray/ValetTray-400.jpg 400w,
+                                        resources/leather/ValetTray/ValetTray-800.jpg 800w,
+                                        resources/leather/ValetTray/ValetTray-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                    400px
+                                    "
+                                    alt="Leather Valet Tray with tooled pattern">
+                            </div>
+                            <div>
+                                <p>
+                                    I designed the pattern myself in Inkscape, it's available <a href="resources/leather/ValetTrayTooling.svg">here</a>.
+                                </p>
+                            <img src="resources/leather/ValetTray/ValetTrayTooling.jpg"alt="Valet Tray Pattern">
+                            </div>
+
+
+                        </div>
+                        <button id="nextButton" onclick="plusDivs1(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex1 = 1;
+                    showDivs1(slideIndex1);
+
+                    function plusDivs1(n) {
+                        showDivs1(slideIndex1 += n);
+                    }
+
+                    function showDivs1(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel1  .carousel > div");
+                        if (n > x.length) {slideIndex1 = 1}
+                        if (n < 1) {slideIndex1 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex1-1].style.display = "flex";
                     }
                 </script>
             </div>

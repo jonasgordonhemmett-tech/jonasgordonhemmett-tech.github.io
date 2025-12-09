@@ -55,9 +55,9 @@
                     <br>
                     <a href="https://github.com/Jonas-Hemmett/Blackjack_Bot">GitHub Repository</a>
                 </p>
-                <div class="carousel1">
+                <div class="carousel2">
                     <div class="carouselWrapper">
-                        <button id="prevButton" onclick="plusDivs(-1)" aria-label="Previous slide">◀</button>
+                        <button id="prevButton" onclick="plusDivs2(-1)" aria-label="Previous slide">◀</button>
                         <div class = "carousel half picDiv">
                                 <div><img 
                                 src="resources/projects/Bot-800.jpg"
@@ -110,26 +110,26 @@
                                 alt="Me at the CS Fair">
                             </div>
                         </div>
-                        <button id="nextButton" onclick="plusDivs(+1)" aria-label="Next slide">▶</button>
+                        <button id="nextButton" onclick="plusDivs2(+1)" aria-label="Next slide">▶</button>
                     </div>
                         <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
                     <script>
-                        var slideIndex = 1;
-                        showDivs(slideIndex);
+                        var slideIndex2 = 1;
+                        showDivs2(slideIndex2);
 
-                        function plusDivs(n) {
-                        showDivs(slideIndex += n);
+                        function plusDivs2(n) {
+                            showDivs2(slideIndex2 += n);
                         }
 
-                        function showDivs(n) {
-                        var i;
-                        var x = document.querySelectorAll(".carousel1 .carousel > div");
-                        if (n > x.length) {slideIndex = 1}
-                        if (n < 1) {slideIndex = x.length} ;
-                        for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";
-                        }
-                        x[slideIndex-1].style.display = "flex";
+                        function showDivs2(n) {
+                            var i;
+                            var x = document.querySelectorAll(".carousel2  .carousel > div");
+                            if (n > x.length) {slideIndex2 = 1}
+                            if (n < 1) {slideIndex2 = x.length} ;
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            x[slideIndex2-1].style.display = "flex";
                         }
                     </script>
                 </div>
@@ -144,10 +144,10 @@
                     <br>
                     <a href="https://github.com/jonasgordonhemmett-tech/Point_of_Sale_System">GitHub Repository</a>
                 </p>
-                <div class="carousel2">
+                <div class="carousel1">
                     <div class="carouselWrapper">
                         <!-- <div class="picDiv"><img src="resources/projects/Me.jpg" alt="Jonas Hemmett" class = "jonasPic"></div> -->
-                        <button id="prevButton2" onclick="plusDivs2(-1)" aria-label="Previous slide">◀</button>
+                        <button id="prevButton2" onclick="plusDivs1(-1)" aria-label="Previous slide">◀</button>
                         <div class = "carousel half picDiv">
                             <div><img src="resources/projects/POSSlides/1.jpg" alt="POS Slide 1, accessible verson is available on GitHub"></div>
                             <div><img src="resources/projects/POSSlides/2.jpg" alt="POS Slide 2, accessible verson is available on GitHub"></div>
@@ -164,31 +164,27 @@
                             <div><img src="resources/projects/POSSlides/13.jpg" alt="POS Slide 13, accessible verson is available on GitHub"></div>
                             
                         </div>
-                        <button id="nextButton2" onclick="plusDivs2(+1)" aria-label="Next slide">▶</button>
+                        <button id="nextButton2" onclick="plusDivs1(+1)" aria-label="Next slide">▶</button>
                     </div>
                         <!-- I used this to make the carousel work https://www.w3schools.com/w3css/w3css_slideshow.asp -->
                     <script>
-                        const isPrintMode = window.matchMedia("print").matches;
+                        var slideIndex1 = 1;
+                        showDivs1(slideIndex1);
 
-                        if (!isPrintMode) {
-                        var slideIndex2 = 1;
-                        showDivs2(slideIndex2);
-
-                        function plusDivs2(n2) {
-                            showDivs2(slideIndex2 += n2);
+                        function plusDivs1(n) {
+                            showDivs1(slideIndex1 += n);
                         }
 
-                        function showDivs2(n2) {
-                            var i2;
-                            var x2 = document.querySelectorAll(".carousel2  .carousel > div");
-                            if (n2 > x2.length) {slideIndex2 = 1}
-                            if (n2 < 1) {slideIndex2 = x2.length} ;
-                            for (i2 = 0; i2 < x2.length; i2++) {
-                                x2[i2].style.display = "none";
+                        function showDivs1(n) {
+                            var i;
+                            var x = document.querySelectorAll(".carousel1  .carousel > div");
+                            if (n > x.length) {slideIndex1 = 1}
+                            if (n < 1) {slideIndex1 = x.length} ;
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
                             }
-                            x2[slideIndex2-1].style.display = "flex";
+                            x[slideIndex1-1].style.display = "flex";
                         }
-                    }
                     </script>
                 </div>
             </div>
