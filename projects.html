@@ -32,7 +32,8 @@
             <section id = "main">
                 <h2>My Website - Winter 2025</h2>
                 <p>
-                    I built this website from scratch using HTML, CSS, and some basic JavaScript. I use Responsive web design to ensure the site looks good across a variety of different devices.<br>
+                    I built this website from scratch using HTML, CSS, and some basic JavaScript. I used Responsive web design to ensure that this site looks good across a variety of different devices. On a smaller screen (e.g., a phone), lower image resolutions are displayed, sections are displayed vertically instead of horizontally,  slideshows become smaller, and text shrinks in size.<br>
+                    <!-- Add: Accessibility, Responive images -->
                     <br>
                     <a href="https://github.com/jonasgordonhemmett-tech/jonasgordonhemmett-tech.github.io">GitHub Repository</a>
                 </p>
@@ -52,12 +53,56 @@
                         <div class="carouselWrapper">
                             <button id="prevButton" onclick="plusDivs(-1)" aria-label="Previous slide">◀</button>
                             <div class = "carousel half picDiv">
-                                <div><img src="resources/projects/Bot.jpg" alt="Blackjack Bot"></div>
+                                 <div><img 
+                                    src="resources/projects/Bot-800.jpg"
+
+                                    srcset = "
+                                        resources/projects/Bot-400.jpg 400w,
+                                        resources/projects/Bot-800.jpg 800w,
+                                        resources/projects/Bot-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                    400px
+                                    "
+                                    alt="Picture of the Blackjack Bot on a grey background">
+                                </div>
                                 <div><img src="resources/projects/BotLayout.jpg" alt="Blackjack Bot laser-cut layout"></div>
                                 <div><img src="resources/projects/BotUI.png" alt="Blackjack Bot UI"></div>
-                                <div><img src="resources/projects/FairPoster.jpg" alt="CS Fair"></div>
-                                <div><img src="resources/projects/FairShow.jpg" alt="Me at the CS Fair"></div>
+                                <div><img 
+                                    src="resources/projects/FairPoster-800.jpg"
 
+                                    srcset = "
+                                        resources/projects/FairPoster-400.jpg 400w,
+                                        resources/projects/FairPoster-800.jpg 800w,
+                                        resources/projects/FairPoster-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                    400px
+                                    "
+                                    alt="Me at the CS Fair">
+                                </div>
+                                <div><img 
+                                    src="resources/projects/FairShow-800.jpg"
+
+                                    srcset = "
+                                        resources/projects/FairShow-400.jpg 400w,
+                                        resources/projects/FairShow-800.jpg 800w,
+                                        resources/projects/FairShow-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                    400px
+                                    "
+                                    alt="Me at the CS Fair">
+                                </div>
                             </div>
                             <button id="nextButton" onclick="plusDivs(+1)" aria-label="Next slide">▶</button>
                         </div>
