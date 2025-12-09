@@ -17,16 +17,17 @@
 
 <body>
     <header>
+        <a href="#main" class="skip">Skip to main content</a>
+
         <h1><a href="index.html" class="ah1">Jonas Hemmett</a></h1>
         <div>
             <a href="index.html" class="headerCurrent">Home</a>
             <a href="leather.html" >Leather</a>
             <a href="projects.html" >Projects</a>
-
         </div>
     </header>
     <main>
-        <div class = "bio">
+        <section class = "bio" id ="main">
             <div class="carouselWrapper">
 
                 <!-- <div class="picDiv"><img src="resources/Me.jpg" alt="Jonas Hemmett" class = "jonasPic"></div> -->
@@ -35,6 +36,7 @@
                     <div><img src="resources/index/Me.jpg" alt="Portrait photo of me"></div>
                     <div><img src="resources/index/MeRock.jpg" alt="Me rock climbing"></div>
                     <div><img src="resources/index/MeSki.jpg" alt="Me Skiing"></div>
+                    <div> <img src="resources/projects/FairShow.jpg" alt="Me at the CS Fair"></div>
                 </div>
                 <button id="nextButton" onclick="plusDivs(+1)">▶</button>
             </div>
@@ -67,9 +69,9 @@
                     I’m currently a Computer Science major at the University of Vermont. I love creative problem solving and exploring how technology can bring my ideas to life. I enjoy building projects that combine code, CAD, and hands-on work to create practical and creative solutions.
                 </p>
             </div>
-        </div>
-       
-        <div class = "bioFlavor">
+        </section>
+    
+        <section class = "bioFlavor">
             <div class = "more">
                 <h2>More About me</h2>
                 <p>
@@ -91,7 +93,7 @@
                     </a>
                 </p>
             </div>
-        </div>
+        </section>
         <!-- <h2>Leather Work</h2>
         <h3><a href="https://jhemmett.com/leather.html">More</a></h3>
 

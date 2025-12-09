@@ -16,6 +16,7 @@
 
 <body>
       <header>
+        <a href="#main" class="skip">Skip to main content</a>
         <h1><a href="index.html" class="ah1">Jonas Hemmett</a></h1>
         <div>
             <a href="index.html" >Home</a>
@@ -24,50 +25,60 @@
 
         </div>
     </header>
-        <h2 class = "carouselLabel">Orange Duffel Bag</h2>
-        <div class = "centerDiv">
-        <div class="carouselWrapper">
-            <button id="prevButton" onclick="plusDivs(-1)">◀</button>
-            <div class = "carousel">
-                <div>
-                    <p>
-                        This is an orange bag I made for my mom. It features shoulder straps and a drawstring closure. The pattern is  from <a href="https://www.etsy.com/listing/946408332/leather-duffel-bag-pattern-pdf-download">TonySeePatterns</a> on Etsy and made some minor modifications like removing the handle.
-                    </p>
-                    <img src="resources/leather/OrangeBag.jpg" alt="Orange Leather Bag">
-                </div>
-                <div>
-                    <p>
-                        My favorite part of the bag is the orange Clemence leather. Clemence is a type of leather coming from young bulls, it is very supple and features a pebbled texture. I was able to get it for an amazing price as the piece I purchased came with some natural imperfections which I incorporated into the look of the bag. 
-                    </p>
-                    <img src="resources/leather/OrangeLeather.jpg" alt="Orange Leather Bag">
+        <section id="main">
+            <h2 class = "carouselLabel">Orange Duffel Bag</h2>
+            <div class = "centerDiv">
+                <div class="carouselWrapper">
+                    <button id="prevButton" onclick="plusDivs(-1)">◀</button>
+                    <div class = "carousel">
+                        <div>
+                            <p>
+                                This is an orange bag I made for my mom. It features shoulder straps and a drawstring closure.
+                            </p>
+                            <img src="resources/leather/OrangeBag.jpg" alt="Orange Leather Bag">
+                        </div>
+                        <div>
+                            <p>
+                                The pattern is  from <a href="https://www.etsy.com/listing/946408332/leather-duffel-bag-pattern-pdf-download">TonySeePatterns</a> on Etsy and made some minor modifications like removing the handle.
+                            </p>
+                            <img src="resources/leather/Etsy.png" alt="Orange Leather Bag">
+                        </div>
+                        <div>
+                            <p>
+                                My favorite part is the orange Clemence leather. I was able to get it for an amazing price as the piece I purchased came with some natural imperfections which I feel add character. 
+                            </p>
+                            <img src="resources/leather/OrangeLeather.jpg" alt="Orange Leather Bag">
+                        </div>
+                    </div>
+                    <button id="nextButton" onclick="plusDivs(+1)">▶</button>
                 </div>
             </div>
-            <button id="nextButton" onclick="plusDivs(+1)">▶</button>
+        <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+            var i;
+            var x = document.querySelectorAll(".carousel > div");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "flex";
+            }
+        </script>
+    </section>
+    <section>
+        <div class="centerDiv">
+            <p>
+                This page is under construction,  check back soon for more examples of my leatherwork.
+            </p>
         </div>
-    </div>
-    <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-        var i;
-        var x = document.querySelectorAll(".carousel > div");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length} ;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "flex";
-        }
-    </script>
-    <div class="centerDiv">
-        <p>
-            This page is under construction,  check back soon for more examples of my leatherwork.
-        </p>
-    </div>
+    </section>
 </body>

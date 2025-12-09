@@ -2,6 +2,22 @@
     font-family: 'Comfortaa';
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
 }
+
+/* I used this to help implement accessibility https://www.w3schools.com/accessibility/accessibility_skip_links.php */
+.skip{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus {
+
+  position: static;
+  width: auto;
+  height: auto;
+}
 h1, .ah1{
     text-decoration: none;
     margin: 0px;
@@ -12,8 +28,6 @@ h1, .ah1{
 p{
         margin-top:0px;
         margin-bottom: 0px;
-
-
 }
 header{
         z-index: 9999;
@@ -28,16 +42,15 @@ header{
     flex-wrap: wrap;
     column-gap: 24px;
 
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 24px;
 
     background-color: #565d69;
     box-shadow: 0px 2px 5px darkgrey;
 
     position: sticky;
     top: 0;
+
+    margin-bottom: 2%;
 
 
 
@@ -71,7 +84,7 @@ header h1:hover{
 }
 
 
-header a{
+header div > a, header > h1 > a{
     font-size:32px;
     color: #c8d9e9;
 
