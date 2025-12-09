@@ -162,7 +162,48 @@
 }
 
 @media print {
+    .carouselWrapper{
+        margin-bottom: 100px;
+
+    }
     .carouselWrapper > button{
         display: none;
+    }
+
+
+    .carousel{
+    width: 856px;
+    height:424px;
+
+}
+
+    .half{
+        width: 428px;
+    }
+
+    .carousel > div img, .carousel div p{
+        margin:0px 10px;
+    }
+
+
+    .carousel > div p{
+        padding:18px;
+        width:  364px;
+        height:364px;
+
+    }   
+
+    .carousel > div img{
+        width:  400px;
+        height:400px;
+
+    }   
+
+    .carousel > div{
+        display: block;
+    }
+
+    .carousel > div[style] {
+        display: block 
     }
 }
