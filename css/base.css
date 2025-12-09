@@ -25,9 +25,7 @@ p{
 }
 
 main{
-    margin:24px;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin: 24px 8%;
 }
 img{
     border: solid 4px  #565d69;
@@ -75,4 +73,16 @@ img{
    display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+}
+
+@media print{
+    main{
+    margin:24px;
+        margin-left: 6px;
+    }
+
+    /* Nice trick to print urls https://css-tricks.com/snippets/css/print-url-after-links/ */
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+    }
 }

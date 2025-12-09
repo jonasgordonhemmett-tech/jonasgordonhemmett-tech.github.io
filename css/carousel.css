@@ -35,9 +35,9 @@
 
 
 .carousel > div p{
-    padding:10px;
-    width:  380px;
-    height:380px;
+    padding:18px;
+    width:  364px;
+    height:364px;
 
 }   
 
@@ -83,6 +83,7 @@
         width: 328px;
     }
     .carousel > div p{
+        padding:10px;
         width:  280px;
         height:280px;
     }   
@@ -93,6 +94,9 @@
 
 }
 @media (max-width: 790px) {
+        .carousel p{
+        font-size:18px;
+    }
     .carouselWrapper > button{
         font-size:15px
         
@@ -154,5 +158,11 @@
     .carousel > div > * {
     scroll-snap-align: center;
 
+    }
+}
+
+@media print {
+    .carouselWrapper > button{
+        display: none;
     }
 }

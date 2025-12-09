@@ -128,3 +128,8 @@ header div a:hover{
 
 
 }
+@media print {
+    header{
+        display: none;
+    }
+}
