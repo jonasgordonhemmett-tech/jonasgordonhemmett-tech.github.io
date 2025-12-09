@@ -16,200 +16,201 @@
         <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
 
     </head>
+    <header>
+    <a href="#main" class="skip">Skip to main content</a>
 
+    <h1><a href="index.html" class="ah1">Jonas Hemmett</a></h1>
+    <div>
+        <a href="index.html" >Home</a>
+        <a href="leather.html">Leather</a>
+        <a href="projects.html" class="headerCurrent">Projects </a>
+
+    </div>
+</header>
 <body>
-      <header>
-        <a href="#main" class="skip">Skip to main content</a>
+    <main>
+        <section id = "main">
+            <h2>My Website - Winter 2025</h2>
+            <p>
+                I built this website from scratch using HTML, CSS, and some basic JavaScript. I made the decision to not use a web application framework as I have experience from my Intro Web Dev class, like back-end development and wanted, and wanted a highly customized webpage<br>
+                <br>
+                I used responsive web design to ensure that this site looks good across a variety of different devices,  I even added rudimentary printer support! On a smaller screen (e.g., phones), lower image resolutions are displayed, sections are displayed vertically instead of horizontally,  slideshows become smaller, and text shrinks in size. <br>
+                <br>
+                I also utilized basic SEO practices, like having mobile compatibility, optimized loading speeds, and a site description, to help my site rank higher on google.<br>
+                <br>
+                Another thing I did was prioritize accessibility so that everyone who wants to can see my site. A few things I did where adding a skip link to the header allowing people screen readers to skip the nav bar (press tab and you can see it), adding text descriptions to buttons and images, and insuring the color palette I picked would remains visible to those with color blindness.<br>
+                <!-- Add: Accessibility, Responive images, SEO -->
+                <br>
+                <a href="https://github.com/jonasgordonhemmett-tech/jonasgordonhemmett-tech.github.io">GitHub Repository</a>
+            </p>
+        </section>
 
-        <h1><a href="index.html" class="ah1">Jonas Hemmett</a></h1>
-        <div>
-            <a href="index.html" >Home</a>
-            <a href="leather.html">Leather</a>
-            <a href="projects.html" class="headerCurrent">Projects </a>
-
-        </div>
-    </header>
-        <main>
-            <section id = "main">
-                <h2>My Website - Winter 2025</h2>
+        <section>
+            <h2>Blackjack Bot - Fall 2025</h2>
+            <div class = "carouselText">
                 <p>
-                    I built this website from scratch using HTML, CSS, and some basic JavaScript. I made the decision to not use a web application framework as I have experience from my Intro Web Dev class, like back-end development and wanted, and wanted a highly customized webpage<br>
+                    I wanted to combine my interest in card games with computer science to create a more efficient playstyle so I built a Raspberry Pi based bot that can participate in real world games of blackjack. I started this project in CS 2210: Computer Organization and I've continued to expand it independently using concepts from CS 3240: Algorithm Design & Analysis and CS 2510: Intro Artificial Intelligence. I'm interested in the practical applications of AI and this was a good opportunity to pursue this interest. My hardwork payed off as I secured 2nd in the 2025 UVM CS Fair.<br>
                     <br>
-                    I used responsive web design to ensure that this site looks good across a variety of different devices,  I even added rudimentary printer support! On a smaller screen (e.g., phones), lower image resolutions are displayed, sections are displayed vertically instead of horizontally,  slideshows become smaller, and text shrinks in size. <br>
+                    <a href="https://jhemmett.w3.uvm.edu/Blackjack_Bot/">Blackjack Bot Website</a><br>
                     <br>
-                    I also utilized basic SEO practices, like having mobile compatibility, optimized loading speeds, and a site description, to help my site rank higher on google.<br>
-                    <br>
-                    Another thing I did was prioritize accessibility so that everyone who wants to can see my site. A few things I did where adding a skip link to the header allowing people screen readers to skip the nav bar (press tab and you can see it), adding text descriptions to buttons and images, and insuring the color palette I picked would remains visible to those with color blindness.<br>
-                    <!-- Add: Accessibility, Responive images, SEO -->
-                    <br>
-                    <a href="https://github.com/jonasgordonhemmett-tech/jonasgordonhemmett-tech.github.io">GitHub Repository</a>
+                    <a href="https://github.com/Jonas-Hemmett/Blackjack_Bot">GitHub Repository</a>
                 </p>
-            </section>
-
-            <section>
-                <h2>Blackjack Bot - Fall 2025</h2>
-                <div class = "carouselText">
-                    <p>
-                        I wanted to combine my interest in card games with computer science to create a more efficient playstyle so I built a Raspberry Pi based bot that can participate in real world games of blackjack. I started this project in CS 2210: Computer Organization and I've continued to expand it independently using concepts from CS 3240: Algorithm Design & Analysis and CS 2510: Intro Artificial Intelligence. I'm interested in the practical applications of AI and this was a good opportunity to pursue this interest. My hardwork payed off as I secured 2nd in the 2025 UVM CS Fair.<br>
-                        <br>
-                        <a href="https://jhemmett.w3.uvm.edu/Blackjack_Bot/">Blackjack Bot Website</a><br>
-                        <br>
-                        <a href="https://github.com/Jonas-Hemmett/Blackjack_Bot">GitHub Repository</a>
-                    </p>
-                    <div class="carousel1">
-                        <div class="carouselWrapper">
-                            <button id="prevButton" onclick="plusDivs(-1)" aria-label="Previous slide">◀</button>
-                            <div class = "carousel half picDiv">
-                                 <div><img 
-                                    src="resources/projects/Bot-800.jpg"
-
-                                    srcset = "
-                                        resources/projects/Bot-400.jpg 400w,
-                                        resources/projects/Bot-800.jpg 800w,
-                                        resources/projects/Bot-1600.jpg 1600w
-                                    " 
-                                    sizes = "
-                                        (max-width: 500px) 224px,
-                                        (max-width: 790px) 200px,
-                                        (max-width: 1400px) 300px,
-                                    400px
-                                    "
-                                    alt="Picture of the Blackjack Bot on a grey background">
-                                </div>
-                                <div><img src="resources/projects/BotLayout.jpg" alt="Blackjack Bot laser-cut layout"></div>
-                                <div><img src="resources/projects/BotUI.png" alt="Blackjack Bot UI"></div>
+                <div class="carousel1">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half picDiv">
                                 <div><img 
-                                    src="resources/projects/FairPoster-800.jpg"
+                                src="resources/projects/Bot-800.jpg"
 
-                                    srcset = "
-                                        resources/projects/FairPoster-400.jpg 400w,
-                                        resources/projects/FairPoster-800.jpg 800w,
-                                        resources/projects/FairPoster-1600.jpg 1600w
-                                    " 
-                                    sizes = "
-                                        (max-width: 500px) 224px,
-                                        (max-width: 790px) 200px,
-                                        (max-width: 1400px) 300px,
-                                    400px
-                                    "
-                                    alt="Me at the CS Fair">
-                                </div>
-                                <div><img 
-                                    src="resources/projects/FairShow-800.jpg"
-
-                                    srcset = "
-                                        resources/projects/FairShow-400.jpg 400w,
-                                        resources/projects/FairShow-800.jpg 800w,
-                                        resources/projects/FairShow-1600.jpg 1600w
-                                    " 
-                                    sizes = "
-                                        (max-width: 500px) 224px,
-                                        (max-width: 790px) 200px,
-                                        (max-width: 1400px) 300px,
-                                    400px
-                                    "
-                                    alt="Me at the CS Fair">
-                                </div>
+                                srcset = "
+                                    resources/projects/Bot-400.jpg 400w,
+                                    resources/projects/Bot-800.jpg 800w,
+                                    resources/projects/Bot-1600.jpg 1600w
+                                " 
+                                sizes = "
+                                    (max-width: 500px) 224px,
+                                    (max-width: 790px) 200px,
+                                    (max-width: 1400px) 300px,
+                                400px
+                                "
+                                alt="Picture of the Blackjack Bot on a grey background">
                             </div>
-                            <button id="nextButton" onclick="plusDivs(+1)" aria-label="Next slide">▶</button>
-                        </div>
-                            <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
-                        <script>
-                            var slideIndex = 1;
-                            showDivs(slideIndex);
+                            <div><img src="resources/projects/BotLayout.jpg" alt="Blackjack Bot laser-cut layout"></div>
+                            <div><img src="resources/projects/BotUI.png" alt="Blackjack Bot UI"></div>
+                            <div><img 
+                                src="resources/projects/FairPoster-800.jpg"
 
-                            function plusDivs(n) {
-                            showDivs(slideIndex += n);
-                            }
-
-                            function showDivs(n) {
-                            var i;
-                            var x = document.querySelectorAll(".carousel1 .carousel > div");
-                            if (n > x.length) {slideIndex = 1}
-                            if (n < 1) {slideIndex = x.length} ;
-                            for (i = 0; i < x.length; i++) {
-                                x[i].style.display = "none";
-                            }
-                            x[slideIndex-1].style.display = "flex";
-                            }
-                        </script>
-                    </div>
-                </div>
-                </div>
-            </section>
-            <section>
-                <h2>Point of Sale System - Fall 2025</h2>
-                <div class="carouselText">
-                    <p>
-                        This project simulates a store's POS system. I created it in order to play around with memory managment. Its biggest feature is being able to dynamically read and write objects from memory to JSON save files.<br>
-                        <br>
-                        <a href="https://github.com/jonasgordonhemmett-tech/Point_of_Sale_System">GitHub Repository</a>
-                    </p>
-                    <div class="carousel2">
-                        <div class="carouselWrapper">
-                            <!-- <div class="picDiv"><img src="resources/projects/Me.jpg" alt="Jonas Hemmett" class = "jonasPic"></div> -->
-                            <button id="prevButton2" onclick="plusDivs2(-1)" aria-label="Previous slide">◀</button>
-                            <div class = "carousel half picDiv">
-                                <div><img src="resources/projects/POSSlides/1.jpg" alt="POS Slide 1, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/2.jpg" alt="POS Slide 2, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/3.jpg" alt="POS Slide 3, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/4.jpg" alt="POS Slide 4, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/5.jpg" alt="POS Slide 5, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/6.jpg" alt="POS Slide 6, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/7.jpg" alt="POS Slide 7, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/8.jpg" alt="POS Slide 8, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/9.jpg" alt="POS Slide 9, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/10.jpg" alt="POS Slide 10, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/11.jpg" alt="POS Slide 11, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/12.jpg" alt="POS Slide 11, accessible verson is available on GitHub"></div>
-                                <div><img src="resources/projects/POSSlides/13.jpg" alt="POS Slide 13, accessible verson is available on GitHub"></div>
-                                
+                                srcset = "
+                                    resources/projects/FairPoster-400.jpg 400w,
+                                    resources/projects/FairPoster-800.jpg 800w,
+                                    resources/projects/FairPoster-1600.jpg 1600w
+                                " 
+                                sizes = "
+                                    (max-width: 500px) 224px,
+                                    (max-width: 790px) 200px,
+                                    (max-width: 1400px) 300px,
+                                400px
+                                "
+                                alt="Me at the CS Fair">
                             </div>
-                            <button id="nextButton2" onclick="plusDivs2(+1)" aria-label="Next slide">▶</button>
+                            <div><img 
+                                src="resources/projects/FairShow-800.jpg"
+
+                                srcset = "
+                                    resources/projects/FairShow-400.jpg 400w,
+                                    resources/projects/FairShow-800.jpg 800w,
+                                    resources/projects/FairShow-1600.jpg 1600w
+                                " 
+                                sizes = "
+                                    (max-width: 500px) 224px,
+                                    (max-width: 790px) 200px,
+                                    (max-width: 1400px) 300px,
+                                400px
+                                "
+                                alt="Me at the CS Fair">
+                            </div>
                         </div>
-                            <!-- I used this to make the carousel work https://www.w3schools.com/w3css/w3css_slideshow.asp -->
-                        <script>
-                            var slideIndex2 = 1;
-                            showDivs2(slideIndex2);
-
-                            function plusDivs2(n2) {
-                                showDivs2(slideIndex2 += n2);
-                            }
-
-                            function showDivs2(n2) {
-                                var i2;
-                                var x2 = document.querySelectorAll(".carousel2  .carousel > div");
-                                if (n2 > x2.length) {slideIndex2 = 1}
-                                if (n2 < 1) {slideIndex2 = x2.length} ;
-                                for (i2 = 0; i2 < x2.length; i2++) {
-                                    x2[i2].style.display = "none";
-                                }
-                                x2[slideIndex2-1].style.display = "flex";
-                            }
-                        </script>
+                        <button id="nextButton" onclick="plusDivs(+1)" aria-label="Next slide">▶</button>
                     </div>
-                </div>
-            </section>
-            <section>
-                <h2>Ork Name Tester - Fall 2025</h2>
-                <p>
-                    This program lets you test Ork names. You  upload a C++ file the site, the site runs it, and it the test results are printed to the web page.<br>
-                    <br>
-                    <a href="https://jhemmett.w3.uvm.edu/cs2300/M3GP/test_cases.html">Website</a>
+                        <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
 
-                </p>
-            </section>
-            <section>
-                <h2>Scooby-Doo Website - Spring 2023</h2>
+                        function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel1 .carousel > div");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex-1].style.display = "flex";
+                        }
+                    </script>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <h2>Point of Sale System - Fall 2025</h2>
+            <div class="carouselText">
                 <p>
-                    For my Intro to Web Site Development course group project, we made a Scooby-Doo fan site. It feataures an animated background with slow moving fog, scrolling flowers, and spooky color-changing text. I did the bulk of the front-end development using HTML and CSS.<br>
+                    This project simulates a store's POS system. I created it in order to play around with memory managment. Its biggest feature is being able to dynamically read and write objects from memory to JSON save files.<br>
                     <br>
-                    <a href="https://jhemmett.w3.uvm.edu/cs008/final_updated/index.php">Scooby-Doo Website</a><br>
-                    <br>
-                    <a href="https://github.com/Jonas-Hemmett/Jonas-Hemmett-Rachel-Rose">GitHub Repository</a>
+                    <a href="https://github.com/jonasgordonhemmett-tech/Point_of_Sale_System">GitHub Repository</a>
                 </p>
-            </section>
-            
-        </main>
-        
+                <div class="carousel2">
+                    <div class="carouselWrapper">
+                        <!-- <div class="picDiv"><img src="resources/projects/Me.jpg" alt="Jonas Hemmett" class = "jonasPic"></div> -->
+                        <button id="prevButton2" onclick="plusDivs2(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half picDiv">
+                            <div><img src="resources/projects/POSSlides/1.jpg" alt="POS Slide 1, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/2.jpg" alt="POS Slide 2, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/3.jpg" alt="POS Slide 3, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/4.jpg" alt="POS Slide 4, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/5.jpg" alt="POS Slide 5, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/6.jpg" alt="POS Slide 6, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/7.jpg" alt="POS Slide 7, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/8.jpg" alt="POS Slide 8, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/9.jpg" alt="POS Slide 9, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/10.jpg" alt="POS Slide 10, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/11.jpg" alt="POS Slide 11, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/12.jpg" alt="POS Slide 11, accessible verson is available on GitHub"></div>
+                            <div><img src="resources/projects/POSSlides/13.jpg" alt="POS Slide 13, accessible verson is available on GitHub"></div>
+                            
+                        </div>
+                        <button id="nextButton2" onclick="plusDivs2(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                        <!-- I used this to make the carousel work https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                    <script>
+                        const isPrintMode = window.matchMedia("print").matches;
+
+                        if (!isPrintMode) {
+                        var slideIndex2 = 1;
+                        showDivs2(slideIndex2);
+
+                        function plusDivs2(n2) {
+                            showDivs2(slideIndex2 += n2);
+                        }
+
+                        function showDivs2(n2) {
+                            var i2;
+                            var x2 = document.querySelectorAll(".carousel2  .carousel > div");
+                            if (n2 > x2.length) {slideIndex2 = 1}
+                            if (n2 < 1) {slideIndex2 = x2.length} ;
+                            for (i2 = 0; i2 < x2.length; i2++) {
+                                x2[i2].style.display = "none";
+                            }
+                            x2[slideIndex2-1].style.display = "flex";
+                        }
+                    }
+                    </script>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Ork Name Tester - Fall 2025</h2>
+            <p>
+                This program lets you test Ork names. You  upload a C++ file the site, the site runs it, and it the test results are printed to the web page.<br>
+                <br>
+                <a href="https://jhemmett.w3.uvm.edu/cs2300/M3GP/test_cases.html">Website</a>
+
+            </p>
+        </section>
+        <section>
+            <h2>Scooby-Doo Website - Spring 2023</h2>
+            <p>
+                For my Intro to Web Site Development course group project, we made a Scooby-Doo fan site. It feataures an animated background with slow moving fog, scrolling flowers, and spooky color-changing text. I did the bulk of the front-end development using HTML and CSS.<br>
+                <br>
+                <a href="https://jhemmett.w3.uvm.edu/cs008/final_updated/index.php">Scooby-Doo Website</a><br>
+                <br>
+                <a href="https://github.com/Jonas-Hemmett/Jonas-Hemmett-Rachel-Rose">GitHub Repository</a>
+            </p>
+        </section> 
+    </main>
 </body>

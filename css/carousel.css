@@ -202,8 +202,4 @@
     .carousel > div{
         display: block;
     }
-
-    .carousel > div[style] {
-        display: block 
-    }
 }
