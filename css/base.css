@@ -11,6 +11,9 @@ body{
 }
 
 
+p.center{
+    text-align: center;
+}
 h2, h3{
     font-family: 'Comfortaa';
     font-size: 32px;
