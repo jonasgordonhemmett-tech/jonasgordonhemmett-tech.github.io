@@ -73,6 +73,27 @@
     background-color: #d2dbea;
 }
 
+@media (min-width: 1900px) {
+    .large {
+        width: 956px;
+        height: 478px;
+    }
+
+    .half .large {
+        width: 478px;
+    }
+
+    .large>div p {
+        padding: 10px;
+        width: 430px;
+        height: 430px;
+    }
+
+    .large>div img {
+        width: 450px;
+        height: 450px;
+    }
+}
 @media (min-width: 2500px) {
     .carousel:not(.small){
     width: 1055px;
