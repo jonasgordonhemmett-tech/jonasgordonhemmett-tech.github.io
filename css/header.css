@@ -30,7 +30,7 @@ p{
         margin-bottom: 0px;
 }
 header{
-        z-index: 9999;
+    z-index: 9999;
 
     font-family: 'Comfortaa';
 
@@ -50,7 +50,7 @@ header{
     position: sticky;
     top: 0;
 
-    margin-bottom: 2%;
+    margin-bottom: 36px;
 
 
 
@@ -98,6 +98,11 @@ header div a:hover{
 }
 
 
+@media (min-width: 2500px){
+    header{
+        margin-bottom: 48px;
+    }
+}
 @media (max-width: 1350px) {    
     header{
         justify-content: center;
@@ -118,6 +123,10 @@ header div a:hover{
 }
 
 @media (max-width: 450px) {
+    header{
+        margin-bottom: 12px;
+
+    }
     header div a{
         font-size:24;
     }
@@ -125,8 +134,6 @@ header div a:hover{
     h1, .ah1{
         font-size: 36px;
     }
-
-
 }
 @media print {
     header{

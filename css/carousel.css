@@ -54,6 +54,7 @@
 .carouselWrapper{
     display: flex;
     align-items: center;
+    margin-bottom: 12px;
 }
 .carouselWrapper > button{
     border: solid 4px  #565d69;
@@ -70,6 +71,12 @@
 
 .carouselWrapper > button:active{
     background-color: #d2dbea;
+}
+
+@media (min-width: 2500px) {
+    .carouselWrapper{
+        margin-bottom: 24px;
+    }
 }
 
 
@@ -94,6 +101,10 @@
 
 }
 @media (max-width: 790px) {
+    .carousel > div img, .carousel div p{
+        margin:0px 5px;
+    }
+
         .carousel p{
         font-size:18px;
     }
@@ -108,12 +119,62 @@
 
 
     .carousel{
-        width:456px;
-        height:224px;
+        width:532px;
+        height:265px;
     }
 
     .half{
-        width:224px;
+        width:265px;
+
+    }
+
+    .carousel > div p{
+    padding:10px;
+    width:  228px;
+    height:228px;
+    }   
+
+    .carousel > div img{
+        width:  248px;
+        height:248px;
+        object-fit: cover;
+
+    }  
+}
+
+@media (max-width: 620px) {
+    .carousel{
+        width: 265px;
+        height: 522px;
+    }
+
+    .half{
+        height: 265px;
+
+    }
+
+    .carousel > div{
+    scroll-snap-align: unset;
+    gap:10px;
+    flex-wrap: wrap;
+
+    }
+
+    .carousel > div > * {
+    scroll-snap-align: center;
+
+    }
+}
+
+@media (max-width: 360px) {
+
+    .carousel{
+        width:218px;
+        height: 426px;
+    }
+
+    .half{
+        height:218px;
 
     }
 
@@ -129,36 +190,6 @@
         object-fit: cover;
 
     }  
-
-
-
-
-}
-
-@media (max-width: 540px) {
-    .carousel{
-        width: 224px;
-        height: 426px;
-        margin-bottom: 10px;
-    }
-
-    .half{
-        height: 224px;
-        margin-bottom: 12px;
-
-    }
-
-    .carousel > div{
-    scroll-snap-align: unset;
-    gap:10px;
-    flex-wrap: wrap;
-
-    }
-
-    .carousel > div > * {
-    scroll-snap-align: center;
-
-    }
 }
 
 @media print {
