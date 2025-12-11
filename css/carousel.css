@@ -74,10 +74,32 @@
 }
 
 @media (min-width: 2500px) {
+    .carousel:not(.small){
+    width: 1055px;
+    height:528px;
+    }
+        
+    .half:not(.small){
+        width: 528px;
+    }
+    .carousel:not(.small) > div p{
+        padding:10px;
+        width: 480px;
+        height:480px;
+    }   
+    .carousel:not(.small) > div img{
+        width:  500px;
+        height:500px;
+    } 
+}
+
+
+@media (min-width: 2500px) {
     .carouselWrapper{
         margin-bottom: 24px;
     }
 }
+
 
 
 @media (max-width: 1400px) {
