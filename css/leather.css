@@ -1,3 +1,4 @@
+/* Scrolling */
 main{
     height: 100vh;
     overflow-y: scroll;
@@ -6,4 +7,21 @@ main{
 section{
     height: 100vh;
     scroll-snap-align: start;
+}
+
+
+.carouselWrapper{
+  margin-top: 12px;
+}
+
+@media (min-width: 2000px){
+  section{
+    margin: 0px 48px;
+  }
+}
+
+@media (min-width: 3000px){
+  section{
+    margin: 0px 300px;
+  }
 }
