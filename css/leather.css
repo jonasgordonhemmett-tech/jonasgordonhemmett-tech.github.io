@@ -5,11 +5,14 @@ main{
   scroll-snap-type: y mandatory;
 }
 section{
-    height: 100vh;
+    height: 50vh;
     scroll-snap-align: start;
 }
 
 
+body{
+  overflow-y: hidden;
+}
 .carouselWrapper{
   margin-top: 12px;
 }
@@ -23,5 +26,11 @@ section{
 @media (min-width: 3000px){
   section{
     margin: 0px 300px;
+  }
+}
+
+@media (max-width:2200px){
+  section{
+    height: 100vh;
   }
 }
