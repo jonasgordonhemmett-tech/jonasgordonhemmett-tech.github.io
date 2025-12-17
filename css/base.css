@@ -19,11 +19,17 @@ h2, h3{
     margin:0px
 }
 
-p{
+p, li{
     font-size:24px;
+}
+
+p{
     margin-left: 80px;
 }
 
+li{
+    margin-bottom: 6px;
+}
 main{
     margin: 24px 8%;
 }

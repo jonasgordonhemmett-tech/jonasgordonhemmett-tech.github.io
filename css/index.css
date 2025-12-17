@@ -46,7 +46,7 @@
 }
 .bioFlavor .more{
     flex: 1 1 600px;
-        margin-bottom: 48px;
+    margin-bottom: 48px;
 
     max-width: 900px;  
 }
@@ -55,6 +55,16 @@
     flex: 0 0 300px;
 }
 
+.skills{
+    margin-bottom: 48px;
+}
+.ListDiv{
+    display: flex;
+    gap:12px;
+    margin-left: 80px;
+
+
+}
 
 @media (min-width: 2500px) {
     .carouselWrapper {
@@ -74,7 +84,7 @@
 }
 
 
-@media (max-width: 1600px) {
+@media (max-width: 1900px) {
 
     .bioFlavor {
         justify-content: flex-start;
@@ -97,6 +107,16 @@
 
 
 }
+@media (max-width: 500px) {
+
+    li{
+        font-size:18px; 
+    }
+
+
+
+
+}
 
 @media (max-width: 400px) {
    .jonasPic {
@@ -105,4 +125,6 @@
 
 
 }
+
+
 
