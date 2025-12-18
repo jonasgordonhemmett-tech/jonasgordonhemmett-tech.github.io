@@ -2,7 +2,10 @@
     font-family: 'Comfortaa';
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
 }
-html{
+
+:target {
+  scroll-margin-top: 96px;
+}tml{
     font-family:Helvetica, sans-serif;
 }
 
