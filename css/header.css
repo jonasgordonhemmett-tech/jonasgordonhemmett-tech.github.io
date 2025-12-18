@@ -140,7 +140,7 @@ header div > div> a, header > h1  > a{
 @media (max-width: 809px) {
 
     .drop > div > ul{
-        margin-top: 1px;
+        margin-top: 12px;
     }
 
 }
@@ -162,7 +162,7 @@ header div > div> a, header > h1  > a{
 
     }
     header div a{
-        font-size:24;
+        font-size:24px;
     }
 
     h1, .ah1{
