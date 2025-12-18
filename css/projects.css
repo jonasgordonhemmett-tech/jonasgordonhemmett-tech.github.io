@@ -18,6 +18,14 @@ main{
     flex:1 1 600px;
     margin-right:12px;
 }
+
+section{
+    margin-bottom: 24px;
+}
+
+section > div > p{
+    margin-bottom: 12px;
+}
 @media (max-width: 13000px) {
         .carouselText > div{
             margin-left: auto;
