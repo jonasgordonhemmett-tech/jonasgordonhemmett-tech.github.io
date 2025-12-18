@@ -3,11 +3,9 @@
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
 }
 
-:target {
-  scroll-margin-top: 96px;
-}
 
 html{
+     scroll-padding-top: 96px;
     font-family:Helvetica, sans-serif;
 }
 
@@ -34,7 +32,9 @@ p, li{
 p{
     margin-left: 80px;
 }
-
+ul{
+    margin-bottom: 0px;
+}
 li{
     margin-bottom: 12px;
 }
