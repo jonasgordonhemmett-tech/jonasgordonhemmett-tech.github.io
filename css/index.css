@@ -58,13 +58,7 @@
 .skills{
     margin-bottom: 48px;
 }
-.ListDiv{
-    display: flex;
-    gap:12px;
-    margin-left: 80px;
 
-
-}
 
 @media (min-width: 2500px) {
     .carouselWrapper {
@@ -108,7 +102,6 @@
 
 }
 @media (max-width: 500px) {
-
     li{
         font-size:18px; 
     }

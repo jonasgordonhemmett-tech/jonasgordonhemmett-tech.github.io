@@ -64,7 +64,7 @@ header a{
 .headerCurrent{
   text-decoration: underline;
 }
-header div{
+header > div{
     flex: 1 1 auto;
 
     display: flex;
@@ -84,7 +84,8 @@ header h1:hover{
 }
 
 
-header div > a, header > h1 > a{
+header div > div> a, header > h1  > a{
+    width:200px;
     font-size:32px;
     color: #c1cce0;
 
@@ -97,7 +98,39 @@ header div a:hover{
 
 }
 
+/* I used this to help create the drop downs https://www.w3schools.com/css/css_dropdowns.asp */
+.drop{
+    position: relative;
+}
 
+.drop > div{
+    display: none;
+    position: absolute;
+}
+.drop > div > ul{
+    margin-top: 21px;
+    background: #c1cce0;
+    width:200px;
+    height:100px;
+
+    box-shadow: 0px 2px 5px darkgrey;
+    border-radius: 0px 0px 16px 16px;
+    padding-bottom: 4px;
+    overflow-y: auto; 
+    scroll-snap-type: y mandatory; 
+
+}
+
+.drop > div > ul > li{
+    scroll-snap-align: start;
+}
+.drop > div > ul > li > a, .drop > div > ul > li{
+
+    color:  #565d69;
+}
+.drop:hover > div{
+    display: block;
+}
 @media (min-width: 2500px){
     header{
         margin-bottom: 48px;
@@ -109,7 +142,13 @@ header div a:hover{
     }
 }
 
+@media (max-width: 809px) {
 
+    .drop > div > ul{
+        margin-top: 12px;
+    }
+
+}
 @media (max-width: 630px) {
     header div a{
         font-size:24px;
