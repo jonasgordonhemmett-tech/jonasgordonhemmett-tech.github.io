@@ -43,7 +43,7 @@ header a{
 .headerCurrent{
   text-decoration: underline;
 }
-header div{
+header > div{
     flex: 1 1 auto;
 
     display: flex;
@@ -72,6 +72,29 @@ header div a{
 header div a:hover{
     transform: scale(1.05);
 
+}
+
+/* I used this to help create the drop downs https://www.w3schools.com/css/css_dropdowns.asp */
+.drop{
+    position: relative;
+
+
+}
+.drop > div{
+    display: none;
+    position: absolute;
+    background: #565d69;
+    box-shadow: 0px 2px 5px darkgrey;
+    height:50px b ;
+
+    overflow: auto;
+    overflow-x: hidden; 
+    scroll-snap-type: x mandatory;
+
+}
+
+.drop:hover > div{
+  display: block;
 }
 
 @media (max-width: 1350px) {    
