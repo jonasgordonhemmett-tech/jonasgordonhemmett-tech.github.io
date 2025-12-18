@@ -137,14 +137,13 @@ header div > div> a, header > h1  > a{
     }
 }
 
-@media (max-width: 809px) {
+@media (max-width: 1300px) {
 
     .drop > div {
         right: 0px;
     }
 
     .drop > div > ul{
-    margin-top: 12px;
     width:150px;
     height:90px
 
@@ -158,6 +157,12 @@ header div > div> a, header > h1  > a{
         font-size: 18px;
     }
  
+}
+
+@media (max-width: 809px){
+    .drop > div > ul{
+        margin-top: 12px;
+    }
 
 }
 @media (max-width: 630px) {
