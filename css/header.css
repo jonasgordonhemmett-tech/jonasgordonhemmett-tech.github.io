@@ -159,7 +159,7 @@ header div > div> a, header > h1  > a{
  
 }
 
-@media (max-width: 809px){
+@media (max-width: 870px){
     .drop > div > ul{
         margin-top: 12px;
     }
