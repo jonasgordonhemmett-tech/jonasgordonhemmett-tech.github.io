@@ -93,11 +93,6 @@ header div > div> a, header > h1  > a{
 
 
 
-header div a:hover{
-    transform: scale(1.03);
-
-}
-
 /* I used this to help create the drop downs https://www.w3schools.com/css/css_dropdowns.asp */
 .drop{
     position: relative;
@@ -145,7 +140,7 @@ header div a:hover{
 @media (max-width: 809px) {
 
     .drop > div > ul{
-        margin-top: 12px;
+        margin-top: 1px;
     }
 
 }
