@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Jonas Hemmett's Site</title>
+       <meta name="description" content="Jonas Hemmett's personal website.">
+        <meta name="keywords" content="Jonas Hemmett, Johannes Hemmett, Hemmett, Student Website, Looking for interns in Vermont">
+        <meta name="author" content="Jonas Hemmett">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/carousel.css">
+        <link rel="stylesheet" href="css/look_book.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+
+    </head>
+
+<header>
+    <a href="#main" class="skip">Skip to main content</a>
+
+    <h1><a href="index.html" class="ah1">Jonas Hemmett</a></h1>
+    
+    <div>
+       <div class = "drop"><a href="index.html" >Home</a></div>
+
+        <div class = "drop"><a href="projects.html">Projects</a><div><ul>
+            <li><a href="projects.html#My_Website">My Website</a></li>
+            <li><a href="projects.html#Blackjack_Bot">Blackjack Bot</a></li>
+            <li><a href="projects.html#Point_of_Sale_System">POS System</a></li>
+            <li><a href="projects.html#Ork_Name_Tester">Ork Name Tester</a></li>
+            <li><a href="projects.html#Scooby-Doo_Website">Scooby-Doo Website</a></li>
+        </ul></div></div>
+
+   
+        <div class = "drop"><a class="headerCurrent" href="leather.html" >Leather</a><div><ul>
+            <li><a href="leather.html#Watch_Band">Watch Band</a></li>
+            <li><a href="leather.html#Orange_Duffel_Bag">Orange Duffel Bag</a></li>
+            <li><a href="leather.html#Tooled_Valet_Tray">Tooled Valet Tray</a></li>
+
+        </ul></div></div>
+    </div>
+</header>
+<body>
+    <main>
+        <section>
+            <div class="buttonHousing">
+                <button id="button1" onclick="showDivs1(1)"></button>
+                <button id="button2" onclick="showDivs1(2)"></button>
+                <button id="button3" onclick="showDivs1(2)"></button>
+
+
+                <!-- I modified the carousel Javascript, based off of this https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+
+
+                <img src="resources\look_book_1\snake_loook\Full_Body.png">
+            </div>
+            <div class="verticalLine"></div>
+            <div class="buttonEffect">
+                <div class="imgStack">
+                    <img src="resources\look_book_1\snake_loook\Upper_Body.png">
+
+                    <img src="resources\look_book_1\snake_loook\Me_Bag.png">
+
+                </div>
+                <div class="horizontalLine"></div>
+                <div class="menu">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+
+                </div>
+                <div class="horizontalLine"></div>
+
+
+                <div class="slide">
+                    <p>
+                        slide2
+                    </p>
+                </div>
+                <div class="slide">
+                    <p>
+                        slide3
+                    </p>
+                </div>
+            </div>
+                <script>
+                    var imageIndex1 = 1;
+                    showDivs1(imageIndex1);
+
+                    function showDivs1(n) {
+                        imageIndex1 = n
+                        var i;
+                        var x = document.querySelectorAll(".buttonEffect > .slide");
+                        if (n > x.length) {imageIndex1 = 1}
+                        if (n < 1) {imageIndex1 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[imageIndex1-1].style.display = "block";
+                    }
+                </script>
+        </section>
+    </main>
+</body>
+</html>

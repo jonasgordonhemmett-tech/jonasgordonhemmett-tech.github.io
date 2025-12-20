@@ -1,0 +1,106 @@
+img{
+    border:none;
+    width: 75%;
+    object-fit: contain;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttonHousing, .buttonEffect{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttonHousing p, .buttonEffect p{
+    margin-left: 0px;
+}
+.butt
+onHousing{
+    position: relative;
+    height: 80vh;
+}
+
+
+.buttonEffect{
+    flex-direction: column;
+}
+
+
+.buttonEffect > .imgStack{
+    display: flex;
+    align-items: flex-end;
+}
+.buttonEffect > .imgStack > img{
+    display: block;
+    height: auto;
+    width: 50%;
+}
+.buttonHousing button{
+    position: absolute;
+    border: none;
+    background:none;
+}
+
+/* Delete after testing */
+.buttonHousing button:active{
+    background-color: green;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+
+.menu > button{
+    width: 46%;
+    background: #c1cce0;
+    box-shadow: 0px 2px 5px darkgrey;
+    border: none;
+    border-radius: 6px;
+    margin: 2%;
+    height: 36px;
+    font-size: 24px;
+    
+}
+
+.menu > button:hover{
+    transform: scale(1.1);
+    
+}
+.verticalLine{
+    margin: 0 24px;
+    border-left: 12px solid #565d69;
+    box-shadow: 0px 2px 5px darkgrey;
+    border-radius: 6px;
+}
+
+.horizontalLine{
+    border-top: 12px solid #565d69;
+    box-shadow: 0px 2px 5px darkgrey;
+    border-radius: 6px;
+    width: 100%;
+}
+#button1{
+    height: 45vh;
+    width: 10%;
+}
+
+
+#button2{
+    top: 45vh;
+    height: 30vh;
+    width: 10%;
+}
+#button3{
+    top: 75vh;
+    height: 5vh;
+    width: 10%;
+}
