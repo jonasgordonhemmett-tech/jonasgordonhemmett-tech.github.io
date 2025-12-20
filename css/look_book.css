@@ -1,6 +1,5 @@
 img{
     border:none;
-    width: 75%;
     object-fit: contain;
 }
 
@@ -14,32 +13,40 @@ section{
 .buttonHousing, .buttonEffect{
     width: 400px;
     display: flex;
-    justify-content: center;
 
 }
 
 .buttonHousing p, .buttonEffect p{
     margin-left: 0px;
 }
-.butt
-onHousing{
+.buttonHousing{
     position: relative;
-    height: 80vh;
+    height: 1000px;
+    justify-content: center;
+
 }
 
 
 .buttonEffect{
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 
-.buttonEffect > .imgStack{
+.buttonEffect > div > .imgStack{
+    height: 450px;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
 }
-.buttonEffect > .imgStack > img{
+
+.buttonEffect > div > .imgStack > img{
     display: block;
     height: auto;
+    width: 50%;
+}
+
+.buttonEffect > div > .imgStack > .split{
     width: 50%;
 }
 .buttonHousing button{
@@ -89,18 +96,18 @@ onHousing{
     width: 100%;
 }
 #button1{
-    height: 45vh;
-    width: 10%;
+    height: 600px;
+    width: 100%;
 }
 
 
 #button2{
-    top: 45vh;
-    height: 30vh;
-    width: 10%;
+    top: 600px;
+    height: 320px;
+    width: 100%;
 }
 #button3{
-    top: 75vh;
-    height: 5vh;
-    width: 10%;
+    top: 920px;
+    height: 80px;
+    width: 100%;
 }

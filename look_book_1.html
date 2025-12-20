@@ -47,7 +47,7 @@
             <div class="buttonHousing">
                 <button id="button1" onclick="showDivs1(1)"></button>
                 <button id="button2" onclick="showDivs1(2)"></button>
-                <button id="button3" onclick="showDivs1(2)"></button>
+                <button id="button3" onclick="showDivs1(3)"></button>
 
 
                 <!-- I modified the carousel Javascript, based off of this https://www.w3schools.com/w3css/w3css_slideshow.asp -->
@@ -57,32 +57,38 @@
             </div>
             <div class="verticalLine"></div>
             <div class="buttonEffect">
-                <div class="imgStack">
-                    <img src="resources\look_book_1\snake_loook\Upper_Body.png">
-
-                    <img src="resources\look_book_1\snake_loook\Me_Bag.png">
-
-                </div>
-                <div class="horizontalLine"></div>
-                <div class="menu">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>4</button>
-
-                </div>
-                <div class="horizontalLine"></div>
-
-
                 <div class="slide">
-                    <p>
-                        slide2
-                    </p>
+                    <div class="imgStack">
+                        <img class="split" src="resources\look_book_1\snake_loook\Upper_Body.png">
+
+                        <img class="split" src="resources\look_book_1\snake_loook\Me_Bag.png">
+
+                    </div>
+                    <div class="horizontalLine"></div>
+                    <div class="menu">
+                        <button onclick="showDivs1(1)">1</button>
+                        <button onclick="showDivs1(2)">2</button>
+                        <button>3</button>
+                        <button>4</button>
+
+                    </div>
+                    <div class="horizontalLine"></div>
                 </div>
                 <div class="slide">
-                    <p>
-                        slide3
-                    </p>
+                    <div class="imgStack">
+                        <img src="resources\look_book_1\snake_loook\Upper_Body.png">
+
+                    </div>
+                    <div class="horizontalLine"></div>
+                    <div class="menu">
+                        <button onclick="showDivs1(2)">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+
+                    </div>
+                    <div class="horizontalLine"></div>
+                </div>
                 </div>
             </div>
                 <script>
