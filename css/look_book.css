@@ -84,7 +84,6 @@ section{
 }
 .imgStack{
     height: 40%;
-    margin-bottom: 4px;
     overflow-x: hidden;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
