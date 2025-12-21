@@ -7,83 +7,131 @@ img{
 section{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .buttonHousing, .buttonEffect{
-    width: 400px;
+    width: 40%;
+    max-width: 500px;
+    height: 80vh;
     display: flex;
 
 }
 
+@media(max-width: 550px){
+    .buttonHousing, .buttonEffect{
+    height: 50vh;
+
+}
+}
 .buttonHousing p, .buttonEffect p{
     margin-left: 0px;
 }
 .buttonHousing{
     position: relative;
-    height: 1000px;
     justify-content: center;
 
 }
 
-
-.buttonEffect{
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-
-.buttonEffect > div > .imgStack{
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.buttonEffect > div > .imgStack > img{
-    display: block;
-    height: auto;
-    width: 50%;
-}
-
-.buttonEffect > div > .imgStack > .split{
-    width: 50%;
-}
 .buttonHousing button{
     position: absolute;
     border: none;
     background:none;
 }
 
-/* Delete after testing */
-.buttonHousing button:active{
-    background-color: green;
+
+.buttonHousing img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    height: 5%;
+}
+
+.buttonEffect{
+    flex-direction: column;
+}
+
+.buttonEffect h2{
+    text-align: center;
+}
+.buttonEffect > .slide{
+    height: 100%;
+}
+.imgStack{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: auto;
+}
+
+.imgStack div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.imgStack img{
+    width: 100%;
+    max-height: 100%;
 }
 
 .menu{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     padding: 4px;
+    height: 10%
 }
-
+@media (max-width:800px) {
+    .menu{
+        height: 12%;
+    }
+    
+}
 .menu > button{
-    width: 46%;
+    color:#565d69;
     background: #c1cce0;
     box-shadow: 0px 2px 5px darkgrey;
     border: none;
     border-radius: 6px;
+    width: 46%;
     margin: 2%;
-    height: 36px;
+    height: 32px;
     font-size: 24px;
+}
+
+
+.menu > button:hover{
+    transform: scale(1.025);
     
 }
 
-.menu > button:hover{
-    transform: scale(1.1);
+.menu > button:active{
+    transform: scale(0.975);
     
 }
+.menu > button.main{
+    width: 92%;
+    height: 64px
+}
+
+@media (max-width: 500px) {
+
+    .menu > button{
+        font-size:18px; 
+        height: 24px;
+    }
+
+    
+    .menu > button.main{
+        height: 48px
+    }
+}
 .verticalLine{
-    margin: 0 24px;
+    margin: 0 2%;
     border-left: 12px solid #565d69;
     box-shadow: 0px 2px 5px darkgrey;
     border-radius: 6px;
@@ -96,18 +144,34 @@ section{
     width: 100%;
 }
 #button1{
-    height: 600px;
+    height: 58%;
     width: 100%;
 }
 
 
 #button2{
-    top: 600px;
-    height: 320px;
+    top:58%;
+    height: 30%;
     width: 100%;
 }
 #button3{
-    top: 920px;
-    height: 80px;
+    top: 90%;
+    height: 12%;
     width: 100%;
 }
+
+#button4{
+    top: 20%;
+    left: 28%;
+    height: 16%;
+    width: 10%;
+}
+
+#button5{
+    top: 20%;
+    left: 60%;
+    height: 16%;
+    width: 10%;
+}
+
+

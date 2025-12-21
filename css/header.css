@@ -18,12 +18,7 @@
   width: auto;
   height: auto;
 }
-h1, .ah1{
-    text-decoration: none;
-    margin: 0px;
-    font-size:48px;
 
-}
 
 p{
         margin-top:0px;
@@ -57,7 +52,7 @@ header{
 }
 
 header a{
-          text-decoration: none;
+    text-decoration: none;
 
 }
 
@@ -84,11 +79,13 @@ header h1:hover{
 }
 
 
-header div > div> a, header > h1  > a{
+header div > div> a{
     max-width:200px;
-    font-size:32px;
     color: #c1cce0;
 
+}
+header div > div> a{
+    font-size:32px;
 }
 
 
@@ -170,10 +167,6 @@ header div > div> a, header > h1  > a{
         font-size:24px;
     }
 
-    h1, .ah1{
-        font-size: 36px;
-    }
-
 
 }
 
@@ -184,10 +177,6 @@ header div > div> a, header > h1  > a{
     }
     header div > div> a{
         font-size:24px;
-    }
-
-    h1, .ah1{
-        font-size: 36px;
     }
 }
 @media print {

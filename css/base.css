@@ -25,6 +25,14 @@ h2, h3{
     margin:0px
 }
 
+h1, h1 a{
+    font-family: 'Comfortaa';
+    color: #c1cce0;
+    text-decoration: none;
+    margin: 0px;
+    font-size:48px;
+
+}
 p, li{
     font-size:24px;
 }
@@ -89,10 +97,20 @@ img{
 
     main{
     margin: 24px 6%;
+    }
 }
 
+@media (max-width: 630px) {
+    h1{
+        font-size: 36px;
+    }
 }
 
+@media (max-width: 450px) {
+    h1{
+        font-size: 36px;
+    }
+}
 
 
 .centerDiv{
