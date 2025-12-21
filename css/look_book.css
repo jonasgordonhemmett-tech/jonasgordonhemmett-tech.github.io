@@ -1,25 +1,29 @@
+main{
+    margin: 0px;
+    padding: 0px;
+}
 img{
     border:none;
     object-fit: contain;
 }
 
-
 section{
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .buttonHousing, .buttonEffect{
-    width: 40%;
+    width: 44%;
     max-width: 500px;
-    height: 80vh;
+    height: 85vh;
     display: flex;
 
 }
 
-@media(max-width: 550px){
+@media(max-width: 390px){
     .buttonHousing, .buttonEffect{
-    height: 50vh;
+    height: 83vh;
 
 }
 }
@@ -44,10 +48,30 @@ section{
 }
 
 .title{
-    text-align: center;
-    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4%;
 }
 
+@media (max-width: 690px){
+    .title h2{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 525px){
+    .title h2{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 400px){
+    .title{
+        height: 8%;
+    }
+}
 .buttonEffect{
     flex-direction: column;
 }
@@ -60,37 +84,52 @@ section{
 }
 .imgStack{
     height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: auto;
+    margin-bottom: 4px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scrollbar-color: #565d69 transparent;
+    scrollbar-width: thick;
 }
 
-.imgStack div{
-    height: 100%;
-    width: 100%;
+.imgStack .imgSlide{
     display: flex;
-    align-items: flex-end;
+    justify-content:center;
+    height: 100%;
+    scroll-snap-align: start;
 }
 
 .imgStack img{
+    height: 100%;
     width: 100%;
-    max-height: 100%;
+    display: block;
 }
 
 .menu{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 4px;
     height: 10%
 }
-@media (max-width:800px) {
+@media (max-width:550px) {
     .menu{
-        height: 12%;
+        margin: 0px;
+        padding: 0px;
+
     }
     
 }
+@media (max-width:400px) {
+    .menu{
+        height: 13%;
+
+    }
+    
+}
+
+
 .menu > button{
     color:#565d69;
     background: #c1cce0;
@@ -104,6 +143,7 @@ section{
 }
 
 
+
 .menu > button:hover{
     transform: scale(1.025);
     
@@ -114,8 +154,8 @@ section{
     
 }
 .menu > button.main{
-    width: 92%;
-    height: 64px
+    width: 90%;
+    height: 85%;
 }
 
 @media (max-width: 500px) {
@@ -125,10 +165,14 @@ section{
         height: 24px;
     }
 
-    
-    .menu > button.main{
-        height: 48px
-    }
+
+}
+
+.text{
+    margin-top: 4px;
+    height: 30%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .verticalLine{
     margin: 0 2%;
