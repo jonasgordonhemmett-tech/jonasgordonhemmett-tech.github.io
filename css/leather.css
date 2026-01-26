@@ -1,4 +1,7 @@
-/* Scrolling */
+html{
+    overflow: hidden;
+
+}
 main{
     height: 100vh;
     overflow-y: scroll;

@@ -2,11 +2,25 @@
     font-family: 'Comfortaa';
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
 }
+html{
+    overflow: hidden;
 
+}
 main{
+    height: 100vh;
+
     display:flex;
     flex-direction: column;
     gap:48px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+section{
+    min-height: 100vh;
+
+    margin-bottom: 32px;
+    scroll-snap-align: start;
+
 }
 
 .carouselText{
@@ -19,9 +33,7 @@ main{
     margin-right:12px;
 }
 
-section{
-    margin-bottom: 32px;
-}
+
 
 section > div > p{
     margin-bottom: 12px;
