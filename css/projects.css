@@ -14,7 +14,6 @@ main{
     flex-direction: column;
     gap:48px;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
 }
 
 
@@ -22,7 +21,6 @@ section{
     min-height: 100vh;
 
     margin-bottom: 32px;
-    scroll-snap-align: start;
 
 
 }
@@ -54,11 +52,6 @@ section > div > p{
         max-width: fit-content;
         margin-right: 0px;
 
-
-    }
-
-    main{
-        scroll-snap-type: y proximity;
 
     }
 }
