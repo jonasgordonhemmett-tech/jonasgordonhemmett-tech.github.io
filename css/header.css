@@ -45,7 +45,7 @@ header{
     position: sticky;
     top: 0;
 
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
 
 
 
@@ -125,7 +125,7 @@ header div > div> a{
 }
 @media (min-width: 2500px){
     header{
-        margin-bottom: 48px;
+        /* margin-bottom: 48px; */
     }
 }
 @media (max-width: 1350px) {    
@@ -172,7 +172,7 @@ header div > div> a{
 
 @media (max-width: 450px) {
     header{
-        margin-bottom: 12px;
+        /* margin-bottom: 12px; */
 
     }
     header div > div> a{
