@@ -2,10 +2,11 @@
     font-family: 'Comfortaa';
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
 }
-html{
-    overflow: hidden;
 
+html > *{
+    overflow: hidden;
 }
+
 main{
     height: 100vh;
 
@@ -13,13 +14,14 @@ main{
     flex-direction: column;
     gap:48px;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 section{
     min-height: 100vh;
 
     margin-bottom: 32px;
     scroll-snap-align: start;
+
 
 }
 
