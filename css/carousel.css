@@ -66,11 +66,8 @@
 
 }
 
-.carouselWrapper > button:hover{
-    transform: scale(1.02);
-}
 
-.carouselWrapper > button:active{
+.carouselWrapper > button:hover{
     background-color: #d2dbea;
 }
 
