@@ -71,6 +71,10 @@
 .carouselWrapper > button:hover{
     background-color: #d2dbea;
 }
+.carouselWrapper > button:active{
+    transform: scale(0.985);
+}
+
 
 @media (min-width: 1900px) {
     .large {
