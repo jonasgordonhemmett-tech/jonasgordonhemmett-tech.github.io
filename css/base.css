@@ -40,7 +40,7 @@ p, li{
 }
 
 p{
-    margin-left: 80px;
+    margin-left: 60px;
 }
 ul{
     margin-bottom: 0px;
@@ -65,7 +65,7 @@ img{
 .ListDiv{
     display: flex;
     gap:12px;
-    margin-left: 80px;
+    margin-left: 60px;
 
 
 }
