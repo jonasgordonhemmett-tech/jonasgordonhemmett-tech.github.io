@@ -45,10 +45,24 @@ header{
     position: sticky;
     top: 0;
 
+        animation: float 0.35s linear;
+
+
     /* margin-bottom: 36px; */
 
 
 
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 header a{

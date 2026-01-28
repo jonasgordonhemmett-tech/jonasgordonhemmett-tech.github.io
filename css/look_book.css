@@ -110,10 +110,11 @@ section{
     justify-content: center;
     align-items: center;
     padding: 4px;
-    height: 10%
+    height: 20%
 }
 @media (max-width:550px) {
     .menu{
+        height: 10%;
         margin: 0px;
         padding: 0px;
 
