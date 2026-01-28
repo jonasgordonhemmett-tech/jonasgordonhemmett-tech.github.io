@@ -79,6 +79,12 @@ header h1:hover, header .drop:hover{
 }
 
 
+header h1:active, header .drop:active{
+    transform: scale(1);
+}
+
+
+
 header div > div> a{
     max-width:200px;
     color: #c1cce0;
