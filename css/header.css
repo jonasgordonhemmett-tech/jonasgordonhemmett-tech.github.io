@@ -45,7 +45,8 @@ header{
     position: sticky;
     top: 0;
 
-        animation: float 0.35s linear;
+    /* I used JavaScript to load the header from the seperate file, however this causes the header to pop in which looks very janky. I added the animation in order to make it less noticeable */
+    animation: float 0.35s linear;
 
 
     /* margin-bottom: 36px; */
