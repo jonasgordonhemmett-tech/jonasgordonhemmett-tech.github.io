@@ -98,13 +98,17 @@ header div > div> a{
 /* I used this to help create the drop downs https://www.w3schools.com/css/css_dropdowns.asp */
 .drop{
     position: relative;
+    
 }
 
 .drop > div{
+
     display: none;
     position: absolute;
 }
 .drop > div > ul{
+    overflow-x: hidden;
+
     margin-top: 21px;
     background: #c1cce0;
     width:200px;
