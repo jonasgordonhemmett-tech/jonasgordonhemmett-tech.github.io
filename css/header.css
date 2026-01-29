@@ -75,11 +75,6 @@ header h1{
 
 }
 
-header h1:hover, header .drop:hover{
-    transform: scale(1.015);
-
-}
-
 
 
 
