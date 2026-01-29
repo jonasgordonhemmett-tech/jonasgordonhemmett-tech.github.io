@@ -55,3 +55,15 @@ section > div > p{
 
     }
 }
+
+
+@media print{
+    html > *{
+    overflow: visible;
+    }
+
+    main{
+
+    overflow-y: initial;
+}
+}

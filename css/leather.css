@@ -32,3 +32,15 @@ body{
     margin: 0px 300px;
   }
 }
+
+
+@media print{
+    html > *{
+    overflow: visible;
+    }
+
+    main{
+
+    overflow-y: initial;
+}
+}

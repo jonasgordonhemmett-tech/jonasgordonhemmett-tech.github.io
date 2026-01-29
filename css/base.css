@@ -135,6 +135,10 @@ img{
 }
 
 @media print{
+    html{
+        scrollbar-color: #ffffff00 #ffffff00;
+
+    }
     main{
     margin:24px;
         margin-left: 6px;
