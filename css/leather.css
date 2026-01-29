@@ -1,5 +1,8 @@
-/* Scrolling */
-main{
+:root{
+    --main-dark-blue: #565d69;
+    --main-light-blue: #c1cce0;
+    --main-bright-blue:#3f6fc5;
+}main{
     height: 100vh;
     overflow-y: scroll;
 }

@@ -1,3 +1,8 @@
+:root{
+    --main-dark-blue: #565d69;
+    --main-light-blue: #c1cce0;
+    --main-bright-blue:#3f6fc5;
+}
 main{
     margin: 0px;
     padding: 0px;
@@ -87,7 +92,7 @@ section{
     overflow-x: hidden;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
-    scrollbar-color: #565d69 transparent;
+    scrollbar-color: var(--main-dark-blue) transparent;
     scrollbar-width: thick;
 }
 
@@ -131,8 +136,8 @@ section{
 
 
 .menu > button{
-    color:#565d69;
-    background: #c1cce0;
+    color:var(--main-dark-blue);
+    background: var(--main-light-blue);
     box-shadow: 0px 2px 5px darkgrey;
     border: none;
     border-radius: 6px;
@@ -176,13 +181,13 @@ section{
 }
 .verticalLine{
     margin: 0 2%;
-    border-left: 12px solid #565d69;
+    border-left: 12px solid var(--main-dark-blue);
     box-shadow: 0px 2px 5px darkgrey;
     border-radius: 6px;
 }
 
 .horizontalLine{
-    border-top: 12px solid #565d69;
+    border-top: 12px solid var(--main-dark-blue);
     box-shadow: 0px 2px 5px darkgrey;
     border-radius: 6px;
     width: 100%;

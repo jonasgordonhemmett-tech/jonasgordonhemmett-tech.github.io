@@ -1,3 +1,8 @@
+:root{
+    --main-dark-blue: #565d69;
+    --main-light-blue: #c1cce0;
+    --main-bright-blue:#3f6fc5;
+}
 @font-face {
     font-family: 'Comfortaa';
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
