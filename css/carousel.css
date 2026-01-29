@@ -73,8 +73,7 @@
 }
 
 .carouselWrapper > button:hover{
-    background-color: var(--main-light-blue);
-        transform: scale(1.01);
+    transform: scale(1.01);
 
 }
 .carouselWrapper > button:active{
