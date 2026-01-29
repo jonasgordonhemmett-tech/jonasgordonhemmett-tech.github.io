@@ -24,7 +24,7 @@ a{
 }
 a:hover{
     display: inline-flex;
-   transform: scale(1.015);
+   transform: scale(1.01);
 }
 
 
