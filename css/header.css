@@ -137,17 +137,17 @@ header div > div> a{
 .drop:hover > div{
     display: block;
 }
-/* 
+
 h1{
     background-color: var(--main-light-blue);
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 h1 > a{
     color: var(--main-dark-blue);
-    margin: 0 10px;
+    margin: 0 4px;
 
-} */
+}
 @media (min-width: 2500px){
     header{
         /* margin-bottom: 48px; */
