@@ -15,202 +15,216 @@
 
     </head>
 
-<div w3-include-html="header.html"></div>
+    <header>
+        <a href="#main" class="skip">Skip to main content</a>
+
+        <h1><a href="index.html">Jonas Hemmett</a></h1>
+        
+        <!-- Might add https://www.w3schools.com/howto/howto_html_include.asp -->
+        <div>
+        <div class = "drop"><a href="index.html" class="headerCurrent">Home</a></div>
+
+            <div class = "drop"><a href="projects.html">Projects</a><div w3-include-html="header_projects.html"></div></div>
+
+
+            <div class = "drop"><a href="leather.html" >Leather</a><div w3-include-html="header_leather.html"></div></div>
+        </div>
+    </header>
+<!-- <div w3-include-html="header.html"></div> -->
 
 <!-- I got the JavaScript from https://www.w3schools.com/howto/howto_html_include.asp -->
-<script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
+    <script>
+    function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+        /* Make an HTTP request using the attribute value as the file name: */
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+            }
         }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /* Exit the function: */
+        return;
+        }
     }
-  }
-}
-includeHTML();
-</script>
-<body>
-    <main>
-        <section class = "bio" id ="main">
-            <div class="carouselWrapper">
+    }
+    includeHTML();
+    </script>
+    <body>
+        <main>
+            <section class = "bio" id ="main">
+                <div class="carouselWrapper">
 
-                <button id="prevButton" onclick="plusDivs(-1)" aria-label="Previous slide">◀</button>
-                <div class = "carousel half small picDiv">
-                    <div><img
-                            src="resources/index/Me-800.jpg"
+                    <button id="prevButton" onclick="plusDivs(-1)" aria-label="Previous slide">◀</button>
+                    <div class = "carousel half small picDiv">
+                        <div><img
+                                src="resources/index/Me-800.jpg"
 
-                            srcset = "
-                                resources/index/Me-400.jpg 400w,
-                                resources/index/Me-800.jpg 800w,
-                                resources/index/Me-1598.jpg 800w,
-                            " 
-                            sizes = "
-                                (max-width: 500px) 224px,
-                                (max-width: 790px) 200px,
-                                (max-width: 1400px) 300px,
+                                srcset = "
+                                    resources/index/Me-400.jpg 400w,
+                                    resources/index/Me-800.jpg 800w,
+                                    resources/index/Me-1598.jpg 800w,
+                                " 
+                                sizes = "
+                                    (max-width: 500px) 224px,
+                                    (max-width: 790px) 200px,
+                                    (max-width: 1400px) 300px,
+                                    400px
+                                "
+                                alt="Portrait style photo of me"></div>
+                        <div><img 
+                                src="resources/index/MeRock-800.jpg"
+                                srcset = "
+                                    resources/index/MeRock-400.jpg 400w,
+                                    resources/index/MeRock-800.jpg 800w,
+                                    resources/index/MeRock-1440.jpg 800w,
+                                " 
+                                sizes = "
+                                    (max-width: 500px) 224px,
+                                    (max-width: 790px) 200px,
+                                    (max-width: 1400px) 300px,
+                                    400px
+                                "
+                                alt="Photo of me rock climbing"></div>
+                        <div><img src="resources/index/MeSki-800.jpg"
+                                srcset = "
+                                    resources/index/MeSki-400.jpg 400w,
+                                    resources/index/MeSki-800.jpg 800w,
+                                    resources/index/MeSki-1495.jpg 800w,
+                                " 
+                                sizes = "
+                                    (max-width: 500px) 224px,
+                                    (max-width: 790px) 200px,
+                                    (max-width: 1400px) 300px,
+                                    400px
+                                "
+                                alt="Photo of me skiing"></div>
+                        <div> <img
+                                src="resources/projects/FairShow-800.jpg"
+                                srcset = "
+                                    resources/projects/FairShow-400.jpg 400w,
+                                    resources/projects/FairShow-800.jpg 800w,
+                                    resources/projects/FairShow-1600.jpg 1600w
+                                " 
+                                sizes = "
+                                    (max-width: 500px) 224px,
+                                    (max-width: 790px) 200px,
+                                    (max-width: 1400px) 300px,
                                 400px
-                            "
-                            alt="Portrait style photo of me"></div>
-                    <div><img 
-                            src="resources/index/MeRock-800.jpg"
-                            srcset = "
-                                resources/index/MeRock-400.jpg 400w,
-                                resources/index/MeRock-800.jpg 800w,
-                                resources/index/MeRock-1440.jpg 800w,
-                            " 
-                            sizes = "
-                                (max-width: 500px) 224px,
-                                (max-width: 790px) 200px,
-                                (max-width: 1400px) 300px,
-                                400px
-                            "
-                            alt="Photo of me rock climbing"></div>
-                    <div><img src="resources/index/MeSki-800.jpg"
-                            srcset = "
-                                resources/index/MeSki-400.jpg 400w,
-                                resources/index/MeSki-800.jpg 800w,
-                                resources/index/MeSki-1495.jpg 800w,
-                            " 
-                            sizes = "
-                                (max-width: 500px) 224px,
-                                (max-width: 790px) 200px,
-                                (max-width: 1400px) 300px,
-                                400px
-                            "
-                            alt="Photo of me skiing"></div>
-                    <div> <img
-                            src="resources/projects/FairShow-800.jpg"
-                            srcset = "
-                                resources/projects/FairShow-400.jpg 400w,
-                                resources/projects/FairShow-800.jpg 800w,
-                                resources/projects/FairShow-1600.jpg 1600w
-                            " 
-                            sizes = "
-                                (max-width: 500px) 224px,
-                                (max-width: 790px) 200px,
-                                (max-width: 1400px) 300px,
-                            400px
-                            "
-                            alt="Me at the CS Fair"></div>
+                                "
+                                alt="Me at the CS Fair"></div>
+                    </div>
+                    <button id="nextButton" onclick="plusDivs(+1)" aria-label="Next slide">▶</button>
                 </div>
-                <button id="nextButton" onclick="plusDivs(+1)" aria-label="Next slide">▶</button>
-            </div>
 
-            <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
-            <script>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
 
-                var slideIndex = 1;
-                showDivs(slideIndex);
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
 
-                function plusDivs(n) {
-                showDivs(slideIndex += n);
-                }
+                    function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                    }
 
-                function showDivs(n) {
-                var i;
-                var x = document.querySelectorAll(".carousel > div");
-                if (n > x.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = x.length} ;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                x[slideIndex-1].style.display = "flex";
-                }
-        
-            </script>
-            <div class = "bioText">
-                <h2>Hi, I'm Jonas</h2>
-                <p>
-                    I’m currently a Computer Science major at the University of Vermont. I love creative problem solving and exploring how technology can bring my ideas to life. I enjoy building projects that combine code, CAD, and hands-on work to create practical and creative solutions.
-                </p>
-                <!-- I’m currently a Computer Science major at UVM. I love exploring projects that blend code, CAD, and hands-on work to build practical and creative solutions. I am proficient in C++, HTML, Python, HTML, and CAD, among other skills. I like computers, rock climbing, and playing games, whether they be video, card, or board. -->
-
-            </div>
-        </section>
-
-        <section class = "bioFlavor">
-           
-            <div class="skills">
-                <h2>My Skills</h2>
-                <p>
-                    Some of my many skills include:
-                </p>
-                <div class="ListDiv">
-                    <ul>
-                        <li>
-                            C++
-                        </li>
-                        <li>
-                            Java
-                        </li>
-                        <li>
-                            Python
-                        </li>
-                        <li>
-                            OpenAI API Integration
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            HTML & CSS for web development
-                        </li>
-                        <li>
-                            CAD tools like Onshape, Sketchup, & CorelDRAW
-                        </li>
-                        <li>
-                            Laser Cutting
-                        </li>
-                        <li>
-                            Matplotlib
-                        </li>
-                    </ul>
-                </div>
-                <p>
-                    Examples are available on my <a href="projects.html">projects</a> page.
-                </p>
-            </div>
-            <div class = "contact">
-            <h2>Contact Me</h2>
-            <div class="ListDiv">
-                <ul>
-                    <li><a href="mailto:jonasgordonhemmett@gmail.com">Personal Email</a></li>
-                    <li><a href="mailto:johannes.hemmett@uvm.edu">UVM Email</a></li>
-                    <li><a href="resources/Resume.pdf">Resume</a></li>
-                </ul>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/jonas-hemmett-8aa39a368">LinkedIn</a></li>
-                    <li><a href="https://github.com/jonasgordonhemmett-tech">Personal GitHub</a></li>
-                    <li><a href="https://github.com/Jonas-Hemmett">UVM GitHub</a></li>
+                    function showDivs(n) {
+                    var i;
+                    var x = document.querySelectorAll(".carousel > div");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length} ;
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex-1].style.display = "flex";
+                    }
             
-                </ul>
-            </div>
-            </div>
-            <div class = "more">
-                <h2>More About Me</h2>
-                <p>
-                    From playing with Legos as a kid to serving as the captain of my high school's robotic club, I've always loved to explore my creative side. Currently I'm working on my blackjack bot and my line of leather goods. Some of my other hobbies include skiing, rock climbing, and playing games, whether they be video, card, or board.
-                </p>
+                </script>
+                <div class = "bioText">
+                    <h2>Hi, I'm Jonas</h2>
+                    <p>
+                        I’m currently a Computer Science major at the University of Vermont. I love creative problem solving and exploring how technology can bring my ideas to life. I enjoy building projects that combine code, CAD, and hands-on work to create practical and creative solutions.
+                    </p>
+                    <!-- I’m currently a Computer Science major at UVM. I love exploring projects that blend code, CAD, and hands-on work to build practical and creative solutions. I am proficient in C++, HTML, Python, HTML, and CAD, among other skills. I like computers, rock climbing, and playing games, whether they be video, card, or board. -->
+
+                </div>
             </section>
 
-    </main>
-</body>
+            <section class = "bioFlavor">
+            
+                <div class="skills">
+                    <h2>My Skills</h2>
+                    <p>
+                        Some of my many skills include:
+                    </p>
+                    <div class="ListDiv">
+                        <ul>
+                            <li>
+                                C++
+                            </li>
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                OpenAI API Integration
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                HTML & CSS for web development
+                            </li>
+                            <li>
+                                CAD tools like Onshape, Sketchup, & CorelDRAW
+                            </li>
+                            <li>
+                                Laser Cutting
+                            </li>
+                            <li>
+                                Matplotlib
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Examples are available on my <a href="projects.html">projects</a> page.
+                    </p>
+                </div>
+                <div class = "contact">
+                <h2>Contact Me</h2>
+                <div class="ListDiv">
+                    <ul>
+                        <li><a href="mailto:jonasgordonhemmett@gmail.com">Personal Email</a></li>
+                        <li><a href="mailto:johannes.hemmett@uvm.edu">UVM Email</a></li>
+                        <li><a href="resources/Resume.pdf">Resume</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/jonas-hemmett-8aa39a368">LinkedIn</a></li>
+                        <li><a href="https://github.com/jonasgordonhemmett-tech">Personal GitHub</a></li>
+                        <li><a href="https://github.com/Jonas-Hemmett">UVM GitHub</a></li>
+                
+                    </ul>
+                </div>
+                </div>
+                <div class = "more">
+                    <h2>More About Me</h2>
+                    <p>
+                        From playing with Legos as a kid to serving as the captain of my high school's robotic club, I've always loved to explore my creative side. Currently I'm working on my blackjack bot and my line of leather goods. Some of my other hobbies include skiing, rock climbing, and playing games, whether they be video, card, or board.
+                    </p>
+            </section>
+        </main>
+    </body>
 </html>

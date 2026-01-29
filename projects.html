@@ -16,8 +16,21 @@
         <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
 
     </head>
-<div w3-include-html="header.html"></div>
+    <header>
+        <a href="#main" class="skip">Skip to main content</a>
 
+        <h1><a href="index.html">Jonas Hemmett</a></h1>
+        
+        <!-- Might add https://www.w3schools.com/howto/howto_html_include.asp -->
+        <div>
+        <div class = "drop"><a href="index.html" >Home</a></div>
+
+            <div class = "drop"><a href="projects.html" class="headerCurrent">Projects</a><div w3-include-html="header_projects.html"></div></div>
+
+
+            <div class = "drop"><a href="leather.html" >Leather</a><div w3-include-html="header_leather.html"></div></div>
+        </div>
+    </header>
 <!-- I got the JavaScript from https://www.w3schools.com/howto/howto_html_include.asp -->
 <script>
 function includeHTML() {
