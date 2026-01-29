@@ -1,3 +1,8 @@
+:root{
+    --main-dark-blue: #565d69;
+    --main-light-blue: #c1cce0;
+    --main-bright-blue:#3f6fc5;
+}
 @font-face {
     font-family: 'Comfortaa';
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
@@ -30,7 +35,7 @@
 }
 .carousel > div img, .carousel div p{
     margin:0px 10px;
-    border: solid 4px  #565d69;
+    border: solid 4px  var(--main-dark-blue);
     border-radius: 16px;
 }
 
@@ -58,7 +63,7 @@
     margin-bottom: 12px;
 }
 .carouselWrapper > button{
-    border: solid 4px  #565d69;
+    border: solid 4px  var(--main-dark-blue);
     
     border-radius: 16px;
     background: none;
@@ -68,7 +73,7 @@
 }
 
 .carouselWrapper > button:hover{
-    background-color: #d2dbea;
+    background-color: var(--main-light-blue);
         transform: scale(1.01);
 
 }

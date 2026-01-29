@@ -1,3 +1,8 @@
+:root{
+    --main-dark-blue: #565d69;
+    --main-light-blue: #c1cce0;
+    --main-bright-blue:#3f6fc5;
+}
 @font-face {
     font-family: 'Comfortaa';
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
@@ -39,7 +44,7 @@ header{
 
     padding: 12px 24px;
 
-    background-color: #565d69;
+    background-color: var(--main-dark-blue);
     box-shadow: 0px 2px 5px darkgrey;
 
     position: sticky;
@@ -86,7 +91,7 @@ header h1:active, header .drop:active{
 
 header div > div> a{
     max-width:200px;
-    color: #c1cce0;
+    color: var(--main-light-blue);
 
 }
 header div > div> a{
@@ -110,7 +115,7 @@ header div > div> a{
     overflow-x: hidden;
 
     margin-top: 21px;
-    background: #c1cce0;
+    background: var(--main-light-blue);
     width:200px;
     height:100px;
 
@@ -127,7 +132,7 @@ header div > div> a{
 }
 .drop > div > ul > li > a, .drop > div > ul > li{
 
-    color:  #565d69;
+    color:  var(--main-dark-blue)
 }
 .drop:hover > div{
     display: block;
