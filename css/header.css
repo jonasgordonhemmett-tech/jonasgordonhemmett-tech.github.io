@@ -138,14 +138,14 @@ header div > div> a{
     display: block;
 }
 
-h1{
+/* h1{
     background-color: var(--main-light-blue);
     border-radius: 16px;
 }
 
 h1 > a{
     color: var(--main-dark-blue);
-    margin: 0 4px;
+    margin: 0 4px; */
 
 }
 @media (min-width: 2500px){
