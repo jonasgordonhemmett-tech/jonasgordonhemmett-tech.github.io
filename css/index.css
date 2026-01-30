@@ -8,11 +8,6 @@
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
 }
 
-main{
-        height: 86dvh;
-        overflow-y: scroll;
-        overflow-x: hidden;
-}
 
 
 
@@ -22,8 +17,6 @@ main{
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    gap:24px;
-    gap:0px 80px;
     margin-bottom: 48px;
 
 }
@@ -43,7 +36,7 @@ main{
 
 
 .bioFlavor{
-
+    gap: 0 24px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -54,22 +47,26 @@ main{
     height: auto;
 }
 
-.bioFlavor{
-    gap:0px 128px;
-}
+
 .bioFlavor .more{
-    flex: 1 1 600px;
+    flex: 1 1 50%;
+    min-width: 500px;
+    max-width: 700px;
     margin-bottom: 48px;
 
-    max-width: 900px;  
 }
 
 .bioFlavor .contact{
-    flex: 1 0 400px;
+    flex: 0 1 auto;
+    max-width: 500px;
+    margin-bottom: 48px;
 }
 
 .skills{
     margin-bottom: 48px;
+    flex: 1 1 auto;
+    max-width: 700px;
+
 }
 
 

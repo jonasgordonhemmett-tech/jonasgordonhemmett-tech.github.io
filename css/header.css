@@ -58,6 +58,11 @@ header{
 
 }
 
+main{
+    height:86vh;
+    overflow-y: auto;
+
+}
 header a{
     text-decoration: none;
 
@@ -149,11 +154,8 @@ h1 > a{
     margin: 0 4px; 
 
 }*/
-@media (min-width: 2500px){
-    header{
-        /* margin-bottom: 48px; */
-    }
-}
+
+
 @media (max-width: 1350px) {    
     header{
         justify-content: center;
@@ -182,29 +184,41 @@ h1 > a{
  
 }
 
-@media (max-width: 870px){
+@media (max-width: 876px){
+    main{
+        height: 87.75vh;    
+    }
     .drop > div > ul{
         margin-top: 12px;
     }
 
-}
-@media (max-width: 630px) {
-    header div > div> a{
-        font-size:24px;
+        h1, h1 a{
+        font-size: 36px;
     }
 
-
+        header div > div> a{
+        font-size:24px;
+    }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 690px){
+    main{
+        height: 86.129vh;    
+    }
     header{
-        /* margin-bottom: 12px; */
+        flex-direction: column;
+        padding: 8px 24px;
 
     }
-    header div > div> a{
-        font-size:24px;
+    h1, h1 a{
+        font-size: 32px;
     }
+
 }
+
+
+
+
 @media print {
     header{
         display: none;

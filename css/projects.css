@@ -3,6 +3,8 @@
     src: url('../resources/Comfortaa-VariableFont_wght.ttf') format('truetype');
 }
 
+/* snapping section code */
+/* 
 html > *{
     overflow: hidden;
 }
@@ -23,6 +25,10 @@ section{
     margin-bottom: 32px;
 
 
+} */
+
+section{
+    margin-bottom: 100px
 }
 
 .carouselText{
