@@ -185,11 +185,12 @@ h1 > a{
 }
 
 @media (max-width: 876px){
+
     main{
         height: 87.75vh;    
     }
     .drop > div > ul{
-        margin-top: 12px;
+        margin-top: 19px;
     }
 
         h1, h1 a{
@@ -202,6 +203,9 @@ h1 > a{
 }
 
 @media (max-width: 690px){
+    .drop > div > ul{
+        margin-top: 9px;
+    }
     main{
         height: 86.129vh;    
     }
