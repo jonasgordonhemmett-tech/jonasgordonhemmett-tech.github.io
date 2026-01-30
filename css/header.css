@@ -139,7 +139,7 @@ header div > div> a{
 
     color:  var(--main-dark-blue)
 }
-.drop:hover > div{
+.drop:hover > div, .drop:focus-within > div{
     display: block;
 }
 
