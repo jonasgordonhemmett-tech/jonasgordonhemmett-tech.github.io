@@ -27,10 +27,15 @@
 
 
 .bioText{
+    flex: 0 1 50%;
     max-width: 700px;
 }
 
-
+@media (max-width:958px){
+    .bioText{
+        flex: 0 1 700px;
+    }
+}
 
 .bioFlavor{
     gap: 0 24px;
@@ -39,6 +44,11 @@
     justify-content: space-around;
 }
 
+@media (max-width:1486px){
+    .bioFlavor{
+        justify-content: flex-start;
+    }
+}
 .jonasPic {
     width: 500px;
     height: auto;
@@ -108,7 +118,7 @@
         margin-right: auto;
     }
 
-    .bioText, .bioFlavor .more{
+    .bioFlavor .more{
         max-width: 700px;
     }
 }
@@ -130,9 +140,9 @@
     }
 }
 
-@media (max-width:1400px){
+@media (max-width:1312px){
     .bioText{
-        max-width: 600px;   
+        max-width: 100%;   
     }
 }
 
