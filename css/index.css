@@ -15,6 +15,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 48px;
+    gap: 24px;
 
 }
 
@@ -31,7 +32,7 @@
     max-width: 700px;
 }
 
-@media (max-width:958px){
+@media (max-width:1015px){
     .bioText{
         flex: 0 1 700px;
     }
