@@ -84,6 +84,11 @@ img{
 
 }
 
+@media (min-width:2250px){
+    main{
+    margin: 0px 12%;
+}
+}
 @media (max-width: 1350px) {    
     header{
         justify-content: center;
