@@ -130,6 +130,9 @@ img{
 }
 
 @media print{
+    a{
+        color: black;
+    }
     html{
         scrollbar-color: #ffffff00 #ffffff00;
 
@@ -143,7 +146,7 @@ img{
         font-size: 24px;
     }
 
-    p, .ListDiv{
+    p, .ListDiv, li{
         font-size:18px;
         margin-left: 20px;
 

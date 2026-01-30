@@ -65,11 +65,14 @@ section > div > p{
 
 @media print{
     html > *{
-    overflow: visible;
+        overflow: visible;
     }
 
     main{
+        overflow-y: initial;
+    }
 
-    overflow-y: initial;
-}
+    section{
+        page-break-before: always;
+    }
 }

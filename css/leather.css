@@ -37,7 +37,10 @@ body{
     }
 
     main{
+      overflow-y: initial;
+    }
 
-    overflow-y: initial;
-}
+    section{
+        page-break-before: always;
+    }
 }

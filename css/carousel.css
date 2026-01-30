@@ -222,6 +222,7 @@
     .carousel{
         width:218px;
         height: 426px;
+
     }
 
     .half{
@@ -242,9 +243,12 @@
 
     }  
 }
+
 @media print {
+
     .carouselWrapper{
         margin-bottom: 100px;
+        justify-content: center !important;
 
     }
     .carouselWrapper > button{
@@ -253,34 +257,42 @@
 
 
     .carousel{
-    width: 856px;
-    height:424px;
-
-}
-
+        margin: 0 auto !important;
+        width: 100%;
+        height:auto;
+        overflow: visible;
+        display: flex !important;
+        flex-direction: column;
+    }
+    .carousel > div {
+        display: flex !important;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        page-break-inside: avoid;
+        margin-bottom: 0px;
+        gap:10px;
+    }
     .half{
         width: 428px;
     }
 
     .carousel > div img, .carousel div p{
         margin:0px 10px;
+        border: none;
     }
 
 
     .carousel > div p{
         padding:18px;
-        width:  364px;
-        height:364px;
+        width:  auto;
+        height:auto;
 
     }   
 
     .carousel > div img{
-        width:  400px;
-        height:400px;
+        width:  100%;
+        height:auto;
 
     }   
-
-    .carousel > div{
-        display: block;
-    }
 }

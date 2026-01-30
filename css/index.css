@@ -126,9 +126,12 @@
    .jonasPic {
          width: 300px;
     }
-
-
 }
 
+@media print{
+    .carouselWrapper{
+        display: none;
+    }
+}
 
 
