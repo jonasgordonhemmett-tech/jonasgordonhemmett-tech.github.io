@@ -53,7 +53,7 @@
 }
 
 .bioFlavor .contact{
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     max-width: 400px;
     margin-bottom: 48px;
 }
