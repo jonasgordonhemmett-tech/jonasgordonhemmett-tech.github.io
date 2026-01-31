@@ -74,7 +74,7 @@
     }
 }
 
-@media (max-width: 2080px) {
+@media (max-width: 2199px) {
     .bioFlavor .contact{
     flex: 0 1 600px;
     }
@@ -94,14 +94,9 @@
 
 .skills{
     margin-bottom: 48px;
-    flex: 1 1 auto;
-    max-width: 600px;
+    flex: 0 1 auto;
+    max-width: 700px;
 
-}
-@media (max-width: 1486px) {
-    .skills{
-        max-width: 1000px;
-    }
 }
 
 @media (min-width: 2500px) {

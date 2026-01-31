@@ -19,7 +19,7 @@ body{
     margin: 0px;
 }
 
-p, ul{
+p, .listDiv ul{
     padding: 0 5px;
 }
 a{
