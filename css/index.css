@@ -32,7 +32,7 @@
     max-width: 700px;
 }
 
-@media (max-width:1015px){
+@media (max-width:1016px){
     .bioText{
         flex: 0 1 700px;
     }
@@ -45,58 +45,57 @@
     justify-content: space-around;
 }
 
-@media (max-width:1486px){
-    .bioFlavor{
-        justify-content: flex-start;
-    }
-}
+
 .jonasPic {
     width: 500px;
     height: auto;
 }
 
 
-.bioFlavor .more{
+.more{
     flex: 1 1 50%;
    max-width: 650px;
     margin-bottom: 48px;
 
 }
 
-.bioFlavor .contact{
+.contact{
     flex: 0 1 400px;
     margin-bottom: 48px;
 }
 
 @media (min-width: 2501px) {
-    .bioFlavor .contact{
-    flex: 0 1 600px;
+    .contact{
+    flex: 0 1 550px;
     }
 }
 
 @media (max-width: 2199px) {
-    .bioFlavor .contact{
-    flex: 0 1 600px;
+    .contact{
+    flex: 0 1 550px;
     }
 }
 
-@media (max-width: 1486px) {
-    .bioFlavor .contact{
-    flex: 0 1 400px;
-    }
-}
 
-@media (max-width: 1008px) {
-    .bioFlavor .contact{
-    flex: 0 1 600px;
+
+@media (max-width: 1359px) {
+    .contact{
+    flex: 0 1 700px;
     }
 }
 
 .skills{
     margin-bottom: 48px;
     flex: 0 1 auto;
-    max-width: 700px;
+    max-width: 550px;
 
+}
+
+@media (max-width:1359px){
+    .skills{
+        max-width: 700px;
+        width: 700px;
+    }
 }
 
 @media (min-width: 2500px) {
