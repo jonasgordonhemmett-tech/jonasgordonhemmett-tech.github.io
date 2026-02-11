@@ -64,7 +64,124 @@ includeHTML();
 </script>
 <body>
     <main>
-        <section id = "Snake_Belt main">
+          <section id="Green_Ostrich_Watch_Band">
+            <h2>Green Ostrich Watch Band</h2>
+            <p>
+                I got this watch as a gift from my mom. I decided I wanted to make a strap that really popped so I used some green ostrich leg leather I had.
+            </p>
+            <div class="carousel6">
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs6(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel large">
+                            <div>
+                                <p>
+                                   The watch on wrist.
+                                </p>
+                                <img                               
+                                    src="resources/leather/GreenOstrichWatchBand/1-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/GreenOstrichWatchBand/1-400.jpg 400w,
+                                        resources/leather/GreenOstrichWatchBand/1-800.jpg 800w,
+                                        resources/leather/GreenOstrichWatchBand/1-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Watch on wrist">
+                            </div>
+
+                            <div>
+                                <p>
+                                   This is the pattern I drafted for the band.
+                                </p>
+                                <img                               
+                                    src="resources/leather/GreenOstrichWatchBand/CAD-1600.png"
+
+                                    srcset = "
+                                        resources/leather/GreenOstrichWatchBand/CAD-400.png 400w,
+                                        resources/leather/GreenOstrichWatchBand/CAD-800.png 800w,
+                                        resources/leather/GreenOstrichWatchBand/CAD-1600.png 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="CAD rendering of watch band">
+                            </div>
+                            <div>
+                                <p>
+                                   The band is lined with cowhide leather to give it structure and make it more comfortable on the wrist. This is what it looked like partially sewn.
+                                </p>
+                                <img                               
+                                    src="resources/leather/GreenOstrichWatchBand/2-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/GreenOstrichWatchBand/2-400.jpg 400w,
+                                        resources/leather/GreenOstrichWatchBand/2-800.jpg 800w,
+                                        resources/leather/GreenOstrichWatchBand/2-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Watch band partially assembled">
+                            </div>
+                            <div>
+                                <p>
+                                   This is what the buckle side of the strap looks like.
+                                </p>
+                                <img                               
+                                    src="resources/leather/GreenOstrichWatchBand/3-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/GreenOstrichWatchBand/3-400.jpg 400w,
+                                        resources/leather/GreenOstrichWatchBand/3-800.jpg 800w,
+                                        resources/leather/GreenOstrichWatchBand/3-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Watch band partially assembled">
+                            </div>
+                        </div>
+                        <button id="nextButton" onclick="plusDivs6(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex6 = 1;
+                    showDivs6(slideIndex6);
+
+                    function plusDivs6(n) {
+                        showDivs6(slideIndex6 += n);
+                    }
+
+                    function showDivs6(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel6 .carousel > div");
+                        if (n > x.length) {slideIndex6 = 1}
+                        if (n < 1) {slideIndex6 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex6-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
+        <section id = "Snake_Belt">
             <h2>Snake Belt</h2>
             <p>
                 I made this belt for myself. I got the snakeskin from Flora & Fauna in Burlington.
