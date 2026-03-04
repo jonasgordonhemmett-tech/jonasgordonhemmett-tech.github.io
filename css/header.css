@@ -16,6 +16,7 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
+  color: var(--main-light-blue);
 }
 .skip:focus {
 
