@@ -63,21 +63,18 @@
     margin-bottom: 12px;
 }
 .carouselWrapper > button{
-    border: solid 4px  var(--main-dark-blue);
     
     border-radius: 16px;
-    background: none;
+    background: var(--main-dark-blue);
     font-size: 20px;
     height:64px;
+    color: white;
+    border: none;
 
 }
 
-.carouselWrapper > button:hover{
-    transform: scale(1.01);
-
-}
 .carouselWrapper > button:active{
-    transform: scale(0.99);
+    transform: scale(0.98);
 }
 
 
