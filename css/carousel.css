@@ -35,13 +35,18 @@
 }
 .carousel > div img, .carousel div p{
     margin:0px 10px;
-    /* border: solid 4px  var(--main-dark-blue); */
-    border: solid 4px  white;
 
     border-radius: 16px;
 }
 
+.carousel > div img, .carousel div p{
+    /* Janky, but removing this messes with spacing */
+    border: solid 4px  white;
+}
+.carousel div p{
+    border: solid 4px  var(--main-dark-blue);
 
+}
 .carousel > div p{
     padding:18px;
     width:  364px;
