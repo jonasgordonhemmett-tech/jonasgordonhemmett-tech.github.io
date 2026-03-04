@@ -35,7 +35,9 @@
 }
 .carousel > div img, .carousel div p{
     margin:0px 10px;
-    border: solid 4px  var(--main-dark-blue);
+    /* border: solid 4px  var(--main-dark-blue); */
+    border: solid 4px  white;
+
     border-radius: 16px;
 }
 
