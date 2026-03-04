@@ -12,7 +12,7 @@
 html{
     scroll-padding-top: 96px;
     font-family:Helvetica, sans-serif;
-    scrollbar-color: var(--main-light-blue) #ffffff00;
+    scrollbar-color: var(--main-dark-blue) #ffffff00;
 }
 
 body{
