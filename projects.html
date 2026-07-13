@@ -76,6 +76,22 @@ includeHTML();
                 <a target="_blank" href="https://github.com/jonasgordonhemmett-tech/jonasgordonhemmett-tech.github.io">GitHub Repository</a>
             </p>
         </section>
+            <section id = "main Evolving_Legged_Robots">
+            <h2>Evolving Legged Robots</h2>
+            <p>
+                For my evolutionary robotics course I used Pyrosim and Pybullet to create robots with differing number of legs and measure the distance they traveled. <br>
+                <br>
+                To start, the evolutionary algorithm initialized each robot with a random neural network controlling its motor outputs. In each generation, the algorithm generated a mutant offspring by selecting a single neuron's parameters or motor range and randomly changing it. The new robot was put into a simulation; if the mutated child achieved a higher fitness score  than its parent, it was kept to seed the next generation, while less successful mutations were discarded. This hill climbing selection process allowed the robots to gradually evolve over hundreds or thousands of generations.<br>
+                <br>
+                One big feature was the parameterization of the leg generation process, automatically adding symmetric pairs to each side with an additional leg being added to the back for robots with an odd number of legs. <br>
+                <br>
+                I also attempted to let the robots evolve an optimal motor range; however, this caused perverse instantiation to occur as the robots evolved to leap far distances instead of walking. To fix this, I ended up having to heavily restrict their maximum range of motion.<br>
+                <br> 
+                In all I ran over 1.5 million simulations and generated data for over 35,000 evolved robots.<br>
+                <br>
+                A video showcase is available here <a href="https://youtu.be/p5rYxXuFmRA">here</a>, and the full paper is available <a href="resources/projects/Evolving_Legged_Robots_Paper.pdf">here</a>
+            </p>
+        </section>
         <section id = "Cat_Database">
             <h2>Cat Database - Spring 2026</h2>
             <p>
