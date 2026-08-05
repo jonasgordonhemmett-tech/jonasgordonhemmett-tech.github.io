@@ -64,6 +64,94 @@ includeHTML();
 </script>
 <body>
     <main>
+        <section id="Watch_Roll">
+            <h2>Watch Roll</h2>
+            <p>
+                I was commissioned to make this watch roll for the Mad River Time watch store in Waitsfield Vermont. It has a red veg tan exterior, a brown pig suede lining, and brown water buffalo trim. 
+            </p>
+            <div class="carousel8">
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs8(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half large">
+                            <div>
+                                <img                               
+                                    src="resources/leather/WatchRoll/outside_roll-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WatchRoll/outside_roll-400.jpg 400w,
+                                        resources/leather/WatchRoll/outside_roll-800.jpg 800w,
+                                        resources/leather/WatchRoll/outside_roll-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Watch roll rolled up">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/WatchRoll/inside-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WatchRoll/inside-400.jpg 400w,
+                                        resources/leather/WatchRoll/inside-800.jpg 800w,
+                                        resources/leather/WatchRoll/inside-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Watch roll inside">
+                            </div>
+                                                        <div>
+                                <img                               
+                                    src="resources/leather/WatchRoll/outside-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WatchRoll/outside-400.jpg 400w,
+                                        resources/leather/WatchRoll/outside-800.jpg 800w,
+                                        resources/leather/WatchRoll/outside-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Watch roll outside">
+                            </div>
+
+                        </div>
+                        <button id="nextButton" onclick="plusDivs8(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex8 = 1;
+                    showDivs8(slideIndex8);
+
+                    function plusDivs8(n) {
+                        showDivs8(slideIndex8 += n);
+                    }
+
+                    function showDivs8(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel8 .carousel > div");
+                        if (n > x.length) {slideIndex8 = 1}
+                        if (n < 1) {slideIndex8 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex8-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
           <section id="Green_Ostrich_Watch_Band">
             <h2>Green Ostrich Watch Band</h2>
             <p>
