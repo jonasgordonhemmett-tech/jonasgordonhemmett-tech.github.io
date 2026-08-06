@@ -64,6 +64,144 @@ includeHTML();
 </script>
 <body>
     <main>
+        <section id="Snake_Key_Chain">
+            <h2>Snake Key Chain</h2>
+            <p>
+                I was commissioned to make this watch roll for the Mad River Time watch store in Waitsfield Vermont. It has a red veg tan exterior, a brown pig suede lining, and brown water buffalo trim. 
+            </p>
+            <div class="carousel9">
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs9(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half large">
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/1-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/1-400.jpg 400w,
+                                        rresources/leather/SnakeKeyChain/1-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/1-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Front of key chain">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/2-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/2-400.jpg 400w,
+                                        rresources/leather/SnakeKeyChain/2-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/2-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Back of key chain">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/3-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/3-400.jpg 400w,
+                                        rresources/leather/SnakeKeyChain/3-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/3-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Printed pattern">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/4-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/4-400.jpg 400w,
+                                        rresources/leather/SnakeKeyChain/4-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/4-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Template layed out">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/5-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/5-400.jpg 400w,
+                                        rresources/leather/SnakeKeyChain/5-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/5-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="parts cut out">
+                            </div>    
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/6-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/6-400.jpg 400w,
+                                        rresources/leather/SnakeKeyChain/6-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/6-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Keychain being glued">
+                            </div>                        
+                        </div>
+                        <button id="nextButton" onclick="plusDivs9(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex9 = 1;
+                    showDivs8(slideIndex9);
+
+                    function plusDivs9(n) {
+                        showDivs9(slideIndex9 += n);
+                    }
+
+                    function showDivs9(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel9 .carousel > div");
+                        if (n > x.length) {slideIndex9 = 1}
+                        if (n < 1) {slideIndex9 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex9-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
         <section id="Watch_Roll">
             <h2>Watch Roll</h2>
             <p>
