@@ -171,8 +171,16 @@
 }
 
 @media print{
+    .bio, .skills, .more, .contact, .carouselWrapper, .bioFlavor {
+        margin: 0px !important; 
+    }
+
     .carouselWrapper{
         display: none;
+    }
+
+    .bioText, .skills, .more, .contact {
+        max-width: 100% !important;
     }
 }
 
