@@ -148,16 +148,16 @@ img{
 }
 
 @media print{
+
+    *{
+        scrollbar-width: none;
+    }
     a{
         color: black;
     }
-    html{
-        scrollbar-color: var(--main-light-blue) var(--main-light-blue);
 
-    }
-    main{
-    margin:24px;
-        margin-left: 6px;
+    section{
+        margin:24px;
     }
 
     h1, h2{
