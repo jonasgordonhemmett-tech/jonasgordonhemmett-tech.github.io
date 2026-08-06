@@ -64,7 +64,128 @@ includeHTML();
 </script>
 <body>
     <main>
-                <section id="Woven_Wallet">
+        <section id="Snake_Watch_Band">
+            <h2>Snake Watch Band</h2>
+            <p>
+                I made myself a watch band for my Seiko. It features a snake skin exterior with a veg tan lining. 
+            </p>
+            <div class="carousel11">
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs11(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half large">
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeWatchBand/"
+
+                                    srcset = "
+                                        resources/leather/SnakeWatchBand/1-400.jpg 400w,
+                                        rresources/leather/SnakeWatchBand/1-800.jpg 800w,
+                                        resources/leather/SnakeWatchBand/1-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Completed Wallet">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeWatchBand/2-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeWatchBand/2-400.jpg 400w,
+                                        rresources/leather/SnakeWatchBand/2-800.jpg 800w,
+                                        resources/leather/SnakeWatchBand/2-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Cut out woven panel">
+                            </div> 
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeWatchBand/3-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeWatchBand/3-400.jpg 400w,
+                                        rresources/leather/SnakeWatchBand/3-800.jpg 800w,
+                                        resources/leather/SnakeWatchBand/3-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Cut out woven panel">
+                            </div>                      
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeWatchBand/4-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeWatchBand/4-400.jpg 400w,
+                                        rresources/leather/SnakeWatchBand/4-800.jpg 800w,
+                                        resources/leather/SnakeWatchBand/4-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Backside of woven panel">
+                            </div>  
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeWatchBand/5-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeWatchBand/5-400.jpg 400w,
+                                        rresources/leather/WovenWallet/5-800.jpg 800w,
+                                        resources/leather/SnakeWatchBand/5-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Pieces layout out">
+                            </div>
+                        </div>
+                        <button id="nextButton" onclick="plusDivs11(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex11 = 1;
+                    showDivs11(slideIndex11);
+
+                    function plusDivs11(n) {
+                        showDivs11(slideIndex11 += n);
+                    }
+
+                    function showDivs11(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel11 .carousel > div");
+                        if (n > x.length) {slideIndex11 = 1}
+                        if (n < 1) {slideIndex11 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex11-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
+        <section id="Woven_Wallet">
             <h2>Woven Wallet</h2>
             <p>
                 I made myself this woven wallet out of goat skin. Its biggest feature is the strips of leather woven through the front panel.
@@ -533,7 +654,7 @@ includeHTML();
             </div>
         </section>
           <section id="Green_Ostrich_Watch_Band">
-            <h2>Green Ostrich Watch Band</h2>
+            <h2>Ostrich Watch Band</h2>
             <p>
                 I got this watch as a gift from my mom. I decided I wanted to make a strap that really popped so I used some green ostrich leg leather I had.
             </p>
