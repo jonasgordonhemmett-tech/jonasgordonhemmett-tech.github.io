@@ -64,6 +64,144 @@ includeHTML();
 </script>
 <body>
     <main>
+                <section id="Woven_Wallet">
+            <h2>Woven Wallet</h2>
+            <p>
+                I made myself this woven wallet out of goat skin. Its biggest feature is the strips of leather woven through the front panel.
+            </p>
+            <div class="carousel10">
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs10(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half large">
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/1-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/1-400.jpg 400w,
+                                        rresources/leather/WovenWallet/1-800.jpg 800w,
+                                        resources/leather/WovenWallet/1-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Completed Wallet">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/2-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/2-400.jpg 400w,
+                                        rresources/leather/WovenWallet/2-800.jpg 800w,
+                                        resources/leather/WovenWallet/2-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Cut out woven panel">
+                            </div> 
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/3-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/3-400.jpg 400w,
+                                        rresources/leather/WovenWallet/3-800.jpg 800w,
+                                        resources/leather/WovenWallet/3-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Cut out woven panel">
+                            </div>                      
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/4-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/4-400.jpg 400w,
+                                        rresources/leather/WovenWallet/4-800.jpg 800w,
+                                        resources/leather/WovenWallet/4-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Backside of woven panel">
+                            </div>  
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/5-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/5-400.jpg 400w,
+                                        rresources/leather/WovenWallet/5-800.jpg 800w,
+                                        resources/leather/WovenWallet/5-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Pieces layout out">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/6-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/6-400.jpg 400w,
+                                        rresources/leather/WovenWallet/6-800.jpg 800w,
+                                        resources/leather/WovenWallet/6-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Inner pockets being attached">
+                            </div>
+                        </div>
+                        <button id="nextButton" onclick="plusDivs10(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex10 = 1;
+                    showDivs10(slideIndex10);
+
+                    function plusDivs10(n) {
+                        showDivs10(slideIndex10 += n);
+                    }
+
+                    function showDivs10(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel10 .carousel > div");
+                        if (n > x.length) {slideIndex10 = 1}
+                        if (n < 1) {slideIndex10 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex10-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
         <section id="Snake_Key_Chain">
             <h2>Snake Key Chain</h2>
             <p>
@@ -183,7 +321,7 @@ includeHTML();
                 <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
                 <script>
                     var slideIndex9 = 1;
-                    showDivs8(slideIndex9);
+                    showDivs9(slideIndex9);
 
                     function plusDivs9(n) {
                         showDivs9(slideIndex9 += n);
