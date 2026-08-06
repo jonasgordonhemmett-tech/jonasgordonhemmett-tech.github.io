@@ -40,7 +40,5 @@ body{
       overflow-y: initial;
     }
 
-    section{
-        page-break-before: always;
-    }
+
 }

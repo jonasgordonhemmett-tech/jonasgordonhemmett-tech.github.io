@@ -157,7 +157,11 @@ img{
     }
 
     section{
-        margin:24px;
+        padding:24px !important;
+        page-break-inside: avoid !important;
+        min-height: auto !important;
+
+
     }
 
     h1, h2{
