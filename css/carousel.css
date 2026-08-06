@@ -251,7 +251,7 @@
 @media print {
 
     .carouselWrapper{
-        margin-bottom: 100px;
+        margin-bottom: 0px !important;
         justify-content: center !important;
 
     }
