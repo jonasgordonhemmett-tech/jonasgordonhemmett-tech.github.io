@@ -152,6 +152,110 @@ includeHTML();
                 </script>
             </div>
         </section>
+        <section id="Tooled_Tote">
+            <h2>Tooled Tote</h2>
+            <p>
+                I made this bag for my drawing class. I tooled my initials on the front using pinned rope as a reference and a succulent on the back. It is made of veg tan leather with different thicknesses used for different parts.
+            </p>
+            <div class="carousel7">
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs7(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half large">
+                            <div>
+                                <img                               
+                                    src="resources/leather/TooledTote/front-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/TooledTote/front-400.jpg 400w,
+                                        resources/leather/TooledTote/front-800.jpg 800w,
+                                        resources/leather/TooledTote/front-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Frontside of tote">
+                            </div>
+                           <div>
+                                <img                               
+                                    src="resources/leather/TooledTote/back-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/TooledTote/back-400.jpg 400w,
+                                        resources/leather/TooledTote/back-800.jpg 800w,
+                                        resources/leather/TooledTote/back-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Backside of tote">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/TooledTote/rope-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/TooledTote/rope-400.jpg 400w,
+                                        resources/leather/TooledTote/rope-800.jpg 800w,
+                                        resources/leather/TooledTote/rope-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Rope layout">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/TooledTote/progress-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/TooledTote/progress-400.jpg 400w,
+                                        resources/leather/TooledTote/progress-800.jpg 800w,
+                                        resources/leather/TooledTote/progress-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Partially assembled bag">
+                            </div>
+                        </div>
+                        <button id="nextButton" onclick="plusDivs7(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex7 = 1;
+                    showDivs7(slideIndex7);
+
+                    function plusDivs7(n) {
+                        showDivs7(slideIndex7 += n);
+                    }
+
+                    function showDivs7(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel7 .carousel > div");
+                        if (n > x.length) {slideIndex7 = 1}
+                        if (n < 1) {slideIndex7 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex7-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
           <section id="Green_Ostrich_Watch_Band">
             <h2>Green Ostrich Watch Band</h2>
             <p>
@@ -575,7 +679,7 @@ includeHTML();
                                         (max-width: 1400px) 300px,
                                         400px
                                     "
-                                    alt="Leather Valet Tray with tooled pattern">
+                                    alt="On wrist">
                             </div>
                              <div>
                                 <p>
@@ -595,7 +699,7 @@ includeHTML();
                                         (max-width: 1400px) 300px,
                                         400px
                                     "
-                                    alt="Leather Valet Tray with tooled pattern">
+                                    alt="Watch">
                             </div>
                             <div>
                                 <div>
@@ -858,7 +962,7 @@ includeHTML();
             </div>
         </section>
         <section id="Tooled_Valet_Tray">
-            <h2>Tooled Valet Tray</h2>
+            <h2>Tooled Tray</h2>
             <p>
                 I made this valet tray for my dad. It features brass rivets and a hand-tooled pattern giving the appearance of a weave.
             </p>
