@@ -4,7 +4,7 @@
     --main-bright-blue:#3f6fc5;
 }
 section{
-    min-height: 100vh;
+    min-height: 8%;
 }
 
 
@@ -22,6 +22,10 @@ body{
 }
 
 @media (min-width: 1300px){
+  section{
+    min-height: 32%;
+}
+
 }
 
 @media (min-width: 3000px){
