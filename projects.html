@@ -69,21 +69,39 @@ includeHTML();
             <p>
                 I made this website  using HTML, CSS, and some basic JavaScript. I decided to build this site from the ground up as I have the skills from my Intro Web Dev class, like back-end development wanted, and wanted to do something unique.<br>
                 <br>
-                I used responsive web design to ensure that this site looks good across of different device. on smaller screens: lower image resolutions are displayed, text shrinks in size, and lists display as a single column. I even included printer support, letting you print the website out onto paper (press ctrl + p to check it out).<br>
+                I used responsive web design to ensure that this site looks good across of different device. on smaller screens lower image resolutions are displayed (I created a <a href="image_resizer.py">Python program</a> to resize images efficiently), text shrinks in size, and lists display as a single column. I even included printer support, letting you print the website out onto paper (press ctrl + p to check it out).<br>
                 <br>
                 Another thing I did was prioritize accessibility. A few things I did where adding a skip link to the header allowing people screen readers to skip the nav bar (press tab), adding text descriptions to buttons and images, and using a color blind friendly color palette.<br>
                 <br>
                 <a target="_blank" href="https://github.com/jonasgordonhemmett-tech/jonasgordonhemmett-tech.github.io">GitHub Repository</a>
             </p>
         </section>
+            <section id = "Evolving_Robots">
+            <h2>Evolving Robots - Spring 2026</h2>
+            <p>
+                For my evolutionary robotics course I used Pyrosim and Pybullet to create robots with differing number of legs and measure the distance they traveled. <br>
+                <br>
+                To start, the evolutionary algorithm initialized each robot with a random neural network controlling its motor outputs. In each generation, the algorithm generated a mutant offspring by selecting a single neuron's parameters or motor range and randomly changing it. The new robot was put into a simulation; if the mutated child achieved a higher fitness score  than its parent, it was kept to seed the next generation, while less successful mutations were discarded. This hill climbing selection process allowed the robots to gradually evolve over hundreds or thousands of generations.<br>
+                <br>
+                One big feature was the parameterization of the leg generation process, automatically adding symmetric pairs to each side with an additional leg being added to the back for robots with an odd number of legs. <br>
+                <br>
+                I also attempted to let the robots evolve an optimal motor range. However this caused perverse instantiation to occur as the robots evolved to leap far distances instead of walking. To fix this, I ended up having to heavily restrict their maximum range of motion.<br>
+                <br> 
+                In all I ran over 1.5 million simulations and generated data for over 35,000 evolved robots.<br>
+                <br>
+                <a href="https://youtu.be/p5rYxXuFmRA">Video Showcase</a><br>
+                <br>
+                <a href="resources/projects/Evolving_Legged_Robots_Paper.pdf">Paper</a>
+            </p>
+        </section>
         <section id = "Cat_Database">
             <h2>Cat Database - Spring 2026</h2>
             <p>
-                I created a database for a simulated cat daycare for my Intro to Databases class. It stores information about cats, owners, and food to a .db file. The Python based interface lets you safely add, remove, and modify the .db file.
+                I created a database for a simulated cat daycare for my Intro to Databases class. It stores information about cats, owners, and food to a .db file. The Python based interface lets you safely add, remove, and modify the .db file using the sqlite3 module.<br>
                 <br>
+                My biggest focus for this project was making sure the system was robust. For example an owner can't be deleted from the database if they have a cat currently enrolled in the daycare.
                 <br>
-                <a target="_blank" href="https://github.com/Jonas-Hemmett/CS2500_Project2">GitHub Repository</a>
-                <br>
+                <a target="_blank" href="https://github.com/Jonas-Hemmett/CS2500_Project2">GitHub Repository</a><br>
                 <br>
                 <a target="_blank" href="https://www.youtube.com/watch?v=C5mSfyPg9aA">Showcase Video</a>
 

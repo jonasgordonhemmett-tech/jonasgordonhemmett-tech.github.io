@@ -64,8 +64,597 @@ includeHTML();
 </script>
 <body>
     <main>
+        <section id="Snake_Watch_Band">
+            <h2>Snake Watch Band</h2>
+            <p>
+                I made myself a watch band for my Seiko. It features a snake skin exterior with a veg tan lining. 
+            </p>
+            <div class="carousel11">
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs11(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half large">
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeWatchBand/1-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeWatchBand/1-400.jpg 400w,
+                                        resources/leather/SnakeWatchBand/1-800.jpg 800w,
+                                        resources/leather/SnakeWatchBand/1-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Completed Wallet">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeWatchBand/2-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeWatchBand/2-400.jpg 400w,
+                                        resources/leather/SnakeWatchBand/2-800.jpg 800w,
+                                        resources/leather/SnakeWatchBand/2-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Cut out woven panel">
+                            </div> 
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeWatchBand/3-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeWatchBand/3-400.jpg 400w,
+                                        resources/leather/SnakeWatchBand/3-800.jpg 800w,
+                                        resources/leather/SnakeWatchBand/3-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Cut out woven panel">
+                            </div>                      
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeWatchBand/4-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeWatchBand/4-400.jpg 400w,
+                                        resources/leather/SnakeWatchBand/4-800.jpg 800w,
+                                        resources/leather/SnakeWatchBand/4-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Backside of woven panel">
+                            </div>  
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeWatchBand/5-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeWatchBand/5-400.jpg 400w,
+                                        resources/leather/WovenWallet/5-800.jpg 800w,
+                                        resources/leather/SnakeWatchBand/5-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Pieces layout out">
+                            </div>
+                        </div>
+                        <button id="nextButton" onclick="plusDivs11(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex11 = 1;
+                    showDivs11(slideIndex11);
+
+                    function plusDivs11(n) {
+                        showDivs11(slideIndex11 += n);
+                    }
+
+                    function showDivs11(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel11 .carousel > div");
+                        if (n > x.length) {slideIndex11 = 1}
+                        if (n < 1) {slideIndex11 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex11-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
+        <section id="Woven_Wallet">
+            <h2>Woven Wallet</h2>
+            <p>
+                I made myself this woven wallet out of goat skin. Its biggest feature is the strips of leather woven through the front panel.
+            </p>
+            <div class="carousel10">
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs10(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half large">
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/1-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/1-400.jpg 400w,
+                                        resources/leather/WovenWallet/1-800.jpg 800w,
+                                        resources/leather/WovenWallet/1-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Completed Wallet">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/2-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/2-400.jpg 400w,
+                                        resources/leather/WovenWallet/2-800.jpg 800w,
+                                        resources/leather/WovenWallet/2-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Cut out woven panel">
+                            </div> 
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/3-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/3-400.jpg 400w,
+                                        resources/leather/WovenWallet/3-800.jpg 800w,
+                                        resources/leather/WovenWallet/3-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Cut out woven panel">
+                            </div>                      
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/4-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/4-400.jpg 400w,
+                                        resources/leather/WovenWallet/4-800.jpg 800w,
+                                        resources/leather/WovenWallet/4-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Backside of woven panel">
+                            </div>  
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/5-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/5-400.jpg 400w,
+                                        resources/leather/WovenWallet/5-800.jpg 800w,
+                                        resources/leather/WovenWallet/5-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Pieces layout out">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/WovenWallet/6-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WovenWallet/6-400.jpg 400w,
+                                        resources/leather/WovenWallet/6-800.jpg 800w,
+                                        resources/leather/WovenWallet/6-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Inner pockets being attached">
+                            </div>
+                        </div>
+                        <button id="nextButton" onclick="plusDivs10(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex10 = 1;
+                    showDivs10(slideIndex10);
+
+                    function plusDivs10(n) {
+                        showDivs10(slideIndex10 += n);
+                    }
+
+                    function showDivs10(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel10 .carousel > div");
+                        if (n > x.length) {slideIndex10 = 1}
+                        if (n < 1) {slideIndex10 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex10-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
+        <section id="Snake_Key_Chain">
+            <h2>Snake Key Chain</h2>
+            <p>
+                I made this keychain as a graduation present for my friend. It is made of veg tan with a snakeskin inlay.
+            </p>
+            <div class="carousel9">
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs9(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half large">
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/1-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/1-400.jpg 400w,
+                                        resources/leather/SnakeKeyChain/1-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/1-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Front of key chain">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/2-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/2-400.jpg 400w,
+                                        resources/leather/SnakeKeyChain/2-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/2-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Back of key chain">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/3-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/3-400.jpg 400w,
+                                        resources/leather/SnakeKeyChain/3-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/3-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Printed pattern">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/4-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/4-400.jpg 400w,
+                                        resources/leather/SnakeKeyChain/4-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/4-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Template layed out">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/5-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/5-400.jpg 400w,
+                                        resources/leather/SnakeKeyChain/5-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/5-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="parts cut out">
+                            </div>    
+                            <div>
+                                <img                               
+                                    src="resources/leather/SnakeKeyChain/6-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/SnakeKeyChain/6-400.jpg 400w,
+                                        resources/leather/SnakeKeyChain/6-800.jpg 800w,
+                                        resources/leather/SnakeKeyChain/6-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Keychain being glued">
+                            </div>                        
+                        </div>
+                        <button id="nextButton" onclick="plusDivs9(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex9 = 1;
+                    showDivs9(slideIndex9);
+
+                    function plusDivs9(n) {
+                        showDivs9(slideIndex9 += n);
+                    }
+
+                    function showDivs9(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel9 .carousel > div");
+                        if (n > x.length) {slideIndex9 = 1}
+                        if (n < 1) {slideIndex9 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex9-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
+        <section id="Watch_Roll">
+            <h2>Watch Roll</h2>
+            <p>
+                I was commissioned to make this watch roll for the Mad River Time watch store in Waitsfield Vermont. It has a red veg tan exterior, a brown pig suede lining, and brown water buffalo trim. 
+            </p>
+            <div class="carousel8">
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs8(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half large">
+                            <div>
+                                <img                               
+                                    src="resources/leather/WatchRoll/outside_roll-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WatchRoll/outside_roll-400.jpg 400w,
+                                        resources/leather/WatchRoll/outside_roll-800.jpg 800w,
+                                        resources/leather/WatchRoll/outside_roll-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Watch roll rolled up">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/WatchRoll/inside-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WatchRoll/inside-400.jpg 400w,
+                                        resources/leather/WatchRoll/inside-800.jpg 800w,
+                                        resources/leather/WatchRoll/inside-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Watch roll inside">
+                            </div>
+                                                        <div>
+                                <img                               
+                                    src="resources/leather/WatchRoll/outside-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/WatchRoll/outside-400.jpg 400w,
+                                        resources/leather/WatchRoll/outside-800.jpg 800w,
+                                        resources/leather/WatchRoll/outside-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Watch roll outside">
+                            </div>
+
+                        </div>
+                        <button id="nextButton" onclick="plusDivs8(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex8 = 1;
+                    showDivs8(slideIndex8);
+
+                    function plusDivs8(n) {
+                        showDivs8(slideIndex8 += n);
+                    }
+
+                    function showDivs8(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel8 .carousel > div");
+                        if (n > x.length) {slideIndex8 = 1}
+                        if (n < 1) {slideIndex8 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex8-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
+        <section id="Tooled_Tote">
+            <h2>Tooled Tote</h2>
+            <p>
+                I made this bag for my drawing class. I tooled my initials on the front using pinned rope as a reference and a succulent on the back. It is made of veg tan leather with different thicknesses used for different parts.
+            </p>
+            <div class="carousel7">
+                <div class = "centerDiv">
+                    <div class="carouselWrapper">
+                        <button id="prevButton" onclick="plusDivs7(-1)" aria-label="Previous slide">◀</button>
+                        <div class = "carousel half large">
+                            <div>
+                                <img                               
+                                    src="resources/leather/TooledTote/front-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/TooledTote/front-400.jpg 400w,
+                                        resources/leather/TooledTote/front-800.jpg 800w,
+                                        resources/leather/TooledTote/front-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Frontside of tote">
+                            </div>
+                           <div>
+                                <img                               
+                                    src="resources/leather/TooledTote/back-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/TooledTote/back-400.jpg 400w,
+                                        resources/leather/TooledTote/back-800.jpg 800w,
+                                        resources/leather/TooledTote/back-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Backside of tote">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/TooledTote/rope-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/TooledTote/rope-400.jpg 400w,
+                                        resources/leather/TooledTote/rope-800.jpg 800w,
+                                        resources/leather/TooledTote/rope-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Rope layout">
+                            </div>
+                            <div>
+                                <img                               
+                                    src="resources/leather/TooledTote/progress-1600.jpg"
+
+                                    srcset = "
+                                        resources/leather/TooledTote/progress-400.jpg 400w,
+                                        resources/leather/TooledTote/progress-800.jpg 800w,
+                                        resources/leather/TooledTote/progress-1600.jpg 1600w
+                                    " 
+                                    sizes = "
+                                        (max-width: 500px) 224px,
+                                        (max-width: 790px) 200px,
+                                        (max-width: 1400px) 300px,
+                                        400px
+                                    "
+                                    alt="Partially assembled bag">
+                            </div>
+                        </div>
+                        <button id="nextButton" onclick="plusDivs7(+1)" aria-label="Next slide">▶</button>
+                    </div>
+                </div>
+                <!-- I used this as a base for the Javascript https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <script>
+                    var slideIndex7 = 1;
+                    showDivs7(slideIndex7);
+
+                    function plusDivs7(n) {
+                        showDivs7(slideIndex7 += n);
+                    }
+
+                    function showDivs7(n) {
+                        var i;
+                        var x = document.querySelectorAll(".carousel7 .carousel > div");
+                        if (n > x.length) {slideIndex7 = 1}
+                        if (n < 1) {slideIndex7 = x.length} ;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex7-1].style.display = "flex";
+                    }
+                </script>
+            </div>
+        </section>
           <section id="Green_Ostrich_Watch_Band">
-            <h2>Green Ostrich Watch Band</h2>
+            <h2>Ostrich Watch Band</h2>
             <p>
                 I got this watch as a gift from my mom. I decided I wanted to make a strap that really popped so I used some green ostrich leg leather I had.
             </p>
@@ -487,7 +1076,7 @@ includeHTML();
                                         (max-width: 1400px) 300px,
                                         400px
                                     "
-                                    alt="Leather Valet Tray with tooled pattern">
+                                    alt="On wrist">
                             </div>
                              <div>
                                 <p>
@@ -507,7 +1096,7 @@ includeHTML();
                                         (max-width: 1400px) 300px,
                                         400px
                                     "
-                                    alt="Leather Valet Tray with tooled pattern">
+                                    alt="Watch">
                             </div>
                             <div>
                                 <div>
@@ -770,7 +1359,7 @@ includeHTML();
             </div>
         </section>
         <section id="Tooled_Valet_Tray">
-            <h2>Tooled Valet Tray</h2>
+            <h2>Tooled Tray</h2>
             <p>
                 I made this valet tray for my dad. It features brass rivets and a hand-tooled pattern giving the appearance of a weave.
             </p>
